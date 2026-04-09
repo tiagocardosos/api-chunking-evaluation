@@ -172,13 +172,24 @@ docker exec rag-chunking-evaluation-mestrado-fastapi-1 uv add <pacote>
 
 ## Análise estatística
 
-Após coletar resultados de múltiplos experimentos:
+Após coletar resultados de múltiplos experimentos (requer rebuild após a primeira vez):
 
 ```bash
-# Dentro do diretório evaluation/
-python3 run_analysis.py          # Wilcoxon + Holm-Bonferroni
-python3 tables.py                # gera CSV, Markdown e LaTeX
+# Wilcoxon + Holm-Bonferroni + critérios de sucesso
+docker exec rag-chunking-evaluation-mestrado-fastapi-1 \
+  uv run python evaluation/run_analysis.py
+
+# Filtra só PDFs ou só Lattes
+docker exec rag-chunking-evaluation-mestrado-fastapi-1 \
+  uv run python evaluation/run_analysis.py --doc-type pdf
+
+# Gera tabelas CSV / Markdown / LaTeX em evaluation/outputs/
+docker exec rag-chunking-evaluation-mestrado-fastapi-1 \
+  uv run python evaluation/tables.py
 ```
+
+> Os scripts lêem os resultados direto do PostgreSQL interno do container.
+> O diretório `evaluation/` é montado em `/app/evaluation` via volume.
 
 ---
 
