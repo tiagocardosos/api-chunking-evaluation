@@ -1,0 +1,44 @@
+[
+  {
+    "question": "Qual o prazo máximo de execução de projetos apoiados pela EMBRAPII?",
+    "expected_answer": "O prazo máximo é de 36 meses para projetos de inovação.",
+    "question_type": "factual",
+    "doc_type": "pdf",
+    "source_doc": "edital_embrapii_2023.pdf"
+  },
+  {
+    "question": "Quais são os critérios de elegibilidade para empresas solicitarem apoio à EMBRAPII?",
+    "expected_answer": "A empresa deve ser brasileira, ter CNPJ ativo e comprovar capacidade de inovação.",
+    "question_type": "factual",
+    "doc_type": "pdf",
+    "source_doc": "edital_embrapii_2023.pdf"
+  },
+  {
+    "question": "Considerando os editais EMBRAPII, como a estrutura de cofinanciamento impacta o risco assumido pelas empresas em projetos de alta incerteza tecnológica?",
+    "expected_answer": null,
+    "question_type": "inferential",
+    "doc_type": "pdf",
+    "source_doc": "edital_embrapii_2023.pdf"
+  },
+  {
+    "question": "Qual é a área de pesquisa principal do pesquisador conforme o currículo Lattes?",
+    "expected_answer": "Ciência da Computação, com foco em Inteligência Artificial.",
+    "question_type": "factual",
+    "doc_type": "xml_lattes",
+    "source_doc": "curriculo_exemplo.xml"
+  },
+  {
+    "question": "Quantos artigos em periódicos internacionais o pesquisador publicou nos últimos 5 anos?",
+    "expected_answer": "12 artigos em periódicos internacionais entre 2019 e 2024.",
+    "question_type": "factual",
+    "doc_type": "xml_lattes",
+    "source_doc": "curriculo_exemplo.xml"
+  },
+  {
+    "question": "Com base na trajetória acadêmica do pesquisador, qual a evolução de sua produção científica ao longo da carreira?",
+    "expected_answer": null,
+    "question_type": "inferential",
+    "doc_type": "xml_lattes",
+    "source_doc": "curriculo_exemplo.xml"
+  }
+]
