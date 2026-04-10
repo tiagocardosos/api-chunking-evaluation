@@ -22,8 +22,22 @@ Como diferentes estratégias de chunking afetam qualidade de recuperação e ger
 
 ## 4. Dataset
 - 100 documentos (60 PDFs + 40 XMLs Lattes)
-- 180 golden questions (90 factual/procedimental + 90 inferencial)
-- Análise separada: PDF vs XML
+- 180 golden questions: **90 no bloco factual** (fatos explícitos + perguntas procedimentais) **+ 90 inferenciais**
+- Cada item do golden set inclui `doc_type` (`pdf` | `xml_lattes`) para análise separada PDF vs XML
+- Formato e validação: `evaluation/golden_set_loader.py` e `evaluation/golden_set_example.json`
+
+### 4.1 Campo `question_type` (implementação vs. desenho)
+
+No JSON do golden set e na API existem **apenas dois valores** válidos: `factual` e `inferential`. O texto “factual/procedimental” do plano refere-se ao **conteúdo** das 90 primeiras perguntas, não a um terceiro enum.
+
+| Valor no JSON | O que cobre | Exemplos |
+|---------------|-------------|----------|
+| `factual` | Fatos explícitos no documento (datas, números, nomes, definições) **e** perguntas **procedimentais** (critérios, requisitos, passos, elegibilidade) cuja resposta está ancorada no texto | “Qual o prazo máximo…?”, “Quais os critérios de elegibilidade…?” |
+| `inferential` | Síntese, interpretação, comparação ou raciocínio sobre o conteúdo; resposta raramente é uma única citação literal | Impacto de políticas no risco; evolução da produção ao longo da carreira |
+
+**`expected_answer`:** preferível preencher para `factual` (métricas RAGAS que usam ground truth, ex. Context Recall e Answer Correctness). Para `inferential`, o gabarito pode ser `null` quando a resposta de referência for difícil de fixar; nesse caso as métricas sem `ground_truth` ainda se aplicam (ver `docs/PAPER-NOTES.md` §3.1).
+
+**Análise estatística:** `evaluation/results_loader.py` aceita filtro `question_type` (`factual` | `inferential`) quando essas colunas estiverem disponíveis nos resultados alinhados ao golden set.
 
 ## 5. Baselines obrigatórios
 - Keyword-only (BM25)

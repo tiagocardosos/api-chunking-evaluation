@@ -1,0 +1,233 @@
+[
+    {
+    "question": "Qual é a finalidade do Comitê de Conduta Ética da EMBRAPII segundo o regulamento?",
+    "expected_answer": "O Comitê tem por finalidade assessorar a administração superior da EMBRAPII na promoção, aplicação e aprimoramento das boas práticas de conduta ética na instituição.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Como o regulamento caracteriza o Comitê de Conduta Ética quanto à sua natureza e função?",
+    "expected_answer": "O Comitê é autônomo, de caráter propositivo e deliberativo, com a função de orientar e aconselhar a direção, o público interno e demais profissionais sobre questões éticas relacionadas às pessoas, ao patrimônio e à imagem da EMBRAPII, além de deliberar sobre condutas questionáveis do ponto de vista ético e aplicar as sanções cabíveis.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Por quais meios o Comitê pode receber denúncias e consultas?",
+    "expected_answer": "As denúncias e consultas podem chegar ao Comitê pelo Canal de Ética, por encaminhamento do Comitê de Gestão de Riscos e Compliance ou por comunicação direta de qualquer profissional.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Quem pode ser abrangido pela atuação do Comitê de Conduta Ética?",
+    "expected_answer": "O Comitê abrange ações que envolvam colaboradores com ou sem vínculo empregatício, dirigentes e também a imagem da EMBRAPII.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Como é composta a estrutura do Comitê de Conduta Ética da EMBRAPII?",
+    "expected_answer": "O Comitê é composto por três membros escolhidos entre os colaboradores do quadro da EMBRAPII e nomeados por ato da Diretoria.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Quais pessoas não podem integrar o Comitê de Conduta Ética?",
+    "expected_answer": "Não podem integrar o Comitê membros do Conselho de Administração e diretores da EMBRAPII.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Qual é a duração do mandato dos membros do Comitê e existe possibilidade de recondução?",
+    "expected_answer": "O mandato é de dois anos, sendo permitida uma recondução consecutiva.",
+    "question_type": "factual"
+    },
+    {
+    "question": "O exercício de função no Comitê gera remuneração adicional?",
+    "expected_answer": "Não. A atuação no Comitê não enseja remuneração adicional, sendo considerada de caráter relevante para a EMBRAPII.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Entre as atribuições do Comitê, qual penalidade ele pode aplicar diretamente?",
+    "expected_answer": "O Comitê pode aplicar diretamente a pena de censura ética.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Quando a investigação recair sobre membro da Diretoria, para quem a recomendação deve ser encaminhada?",
+    "expected_answer": "A recomendação deve ser diretamente encaminhada ao Conselho de Administração da entidade.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Quais deveres do Comitê são expressamente relacionados à proteção das partes envolvidas em uma apuração?",
+    "expected_answer": "O Comitê deve preservar a honra e a imagem da pessoa investigada e proteger a identidade do denunciante.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Em que situações há impedimento de membro do Comitê?",
+    "expected_answer": "Há impedimento quando o membro tem interesse direto ou indireto no feito, participa ou participou de processo relacionado como perito, testemunha, advogado ou representante legal, litiga com as partes envolvidas ou é cônjuge, companheiro ou parente até o terceiro grau do denunciante, denunciado ou investigado.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Em que situações ocorre suspeição de membro do Comitê?",
+    "expected_answer": "Ocorre suspeição quando o membro é amigo íntimo ou notório desafeto do denunciante, denunciado ou investigado, ou é credor ou devedor dessas pessoas ou de seus cônjuges, companheiros ou parentes até o terceiro grau.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Com que frequência o Comitê deve se reunir ordinariamente?",
+    "expected_answer": "O Comitê deve se reunir trimestralmente ou conforme demanda, em caráter ordinário.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Como são tomadas as deliberações do Comitê?",
+    "expected_answer": "As deliberações são tomadas por maioria simples de votos dos membros, sendo que o entendimento só é firmado após a manifestação dos três votos, evitando-se empate.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Quais são as duas grandes etapas previstas para a apuração de falta ética?",
+    "expected_answer": "As etapas são a análise primária de admissibilidade e o processo de investigação de conduta ética.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Quais elementos devem ser observados no juízo de admissibilidade da denúncia?",
+    "expected_answer": "Devem ser observados a descrição da conduta, a indicação da autoria, se possível, e a apresentação dos elementos de prova ou indicação de onde podem ser encontrados.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Quais resultados podem decorrer da deliberação do Comitê ao final da investigação?",
+    "expected_answer": "A deliberação pode resultar em proposta de arquivamento do processo, aplicação da pena de censura ética, recomendação de suspensão ou demissão, ou proposta de acordo de ajustamento de conduta.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Como o processo de investigação deve ser formalizado quanto ao sigilo e ao acesso do denunciado?",
+    "expected_answer": "Até a conclusão final, os expedientes têm caráter reservado, mas o denunciado tem direito de conhecer o teor da acusação e obter vista dos autos e cópia de documentos mediante solicitação formal e assinatura de termo de responsabilidade.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Qual é o prazo para pedido de reconsideração pelo representado após a ciência da decisão?",
+    "expected_answer": "O prazo é de dez dias contados da ciência da decisão.",
+    "question_type": "factual"
+    },
+    {
+    "question": "O que acontece quando o Comitê identifica possível ocorrência de ilícitos de natureza penal, civil ou administrativa?",
+    "expected_answer": "O Comitê encaminha cópia dos autos, destacando a infração, ao Diretor-Presidente, para as providências necessárias.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Em que condições pode ser celebrado acordo de ajustamento de conduta?",
+    "expected_answer": "O acordo pode ser celebrado a juízo do Comitê de Conduta Ética e mediante consentimento do representado.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Por quanto tempo o procedimento pode ficar suspenso após a lavratura de acordo de ajustamento de conduta?",
+    "expected_answer": "O procedimento preliminar ou o processo de investigação pode ficar suspenso por até dois anos, a critério do Comitê.",
+    "question_type": "factual"
+    },
+    {
+    "question": "O representado pode constituir advogado durante o procedimento de apuração?",
+    "expected_answer": "Sim. É facultado ao representado, a qualquer momento do procedimento de apuração, constituir advogado para atuar em sua defesa.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Quais são as formas de protocolar representação, denúncia ou outra demanda ao Comitê?",
+    "expected_answer": "A demanda pode ser protocolada por encaminhamento do Comitê de Gestão de Riscos e Compliance, por meio do Canal de Ética no sítio da instituição ou via correio eletrônico ou postal.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Qual prazo o representado tem para apresentar defesa prévia após ser notificado da instauração do processo?",
+    "expected_answer": "O prazo é de dez dias, podendo ser prorrogado por igual período, a juízo do Comitê, mediante requerimento justificado.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Quantas testemunhas, no máximo, o representado pode listar na defesa prévia?",
+    "expected_answer": "Até quatro testemunhas.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Em quais hipóteses o Comitê pode indeferir pedido de prova pericial?",
+    "expected_answer": "Quando a comprovação do fato não depender de conhecimento especial de perito ou quando o pedido se revelar meramente protelatório ou sem interesse para o esclarecimento do fato.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Após a instrução processual e a elaboração do relatório, qual novo prazo é assegurado ao investigado?",
+    "expected_answer": "O investigado é notificado para apresentar alegações finais no prazo de dez dias.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Quais garantias institucionais são asseguradas aos membros do Comitê durante e após o mandato?",
+    "expected_answer": "São asseguradas condições de trabalho necessárias ao exercício de suas funções, proteção contra prejuízo ou dano pelo exercício das atribuições, garantia de emprego durante o mandato e por igual prazo após seu término, salvo falta grave apurada, além do custeio da defesa em processos administrativos e judiciais decorrentes de ato regular de sua gestão.",
+    "question_type": "factual"
+    },
+    {
+    "question": "O que a autonomia e o caráter deliberativo do Comitê sugerem sobre o papel da ética na governança da EMBRAPII?",
+    "expected_answer": "Sugerem que a ética é tratada como uma dimensão estruturante da governança institucional, com capacidade não apenas consultiva, mas também decisória e sancionatória.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "Por que o regulamento impede que membros do Conselho de Administração e diretores integrem o Comitê?",
+    "expected_answer": "A restrição busca reduzir riscos de conflito de interesses, reforçar a independência do Comitê e preservar a credibilidade das apurações envolvendo a alta administração.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "Qual a importância de exigir que os três votos sejam manifestados antes da formação do entendimento do Comitê?",
+    "expected_answer": "Essa exigência reforça colegialidade, completude da deliberação e maior robustez decisória, evitando conclusões parciais e reduzindo o risco de desempate ou de decisão apressada.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "Por que o regulamento protege simultaneamente a identidade do denunciante e a honra da pessoa investigada?",
+    "expected_answer": "Porque o procedimento ético precisa equilibrar incentivo à denúncia responsável com proteção contra exposição indevida, preservando tanto a apuração quanto os direitos e a reputação das partes.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "O que a previsão de impedimento e suspeição revela sobre a preocupação do regulamento com a imparcialidade?",
+    "expected_answer": "Revela uma preocupação explícita em evitar que vínculos pessoais, interesses ou histórico de relacionamento influenciem o julgamento, fortalecendo a legitimidade das decisões do Comitê.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "Por que o regulamento prevê tanto reuniões ordinárias trimestrais quanto convocações extraordinárias?",
+    "expected_answer": "Porque o Comitê precisa manter acompanhamento institucional contínuo, mas também preservar agilidade para responder a situações urgentes ou sensíveis.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "Qual a lógica de dividir a apuração entre admissibilidade inicial e investigação formal?",
+    "expected_answer": "A divisão permite filtrar previamente denúncias com base mínima de plausibilidade, evitando abertura desnecessária de processo formal e concentrando esforços em casos com indícios consistentes.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "Por que o regulamento admite acordo de ajustamento de conduta antes do encerramento de certos casos?",
+    "expected_answer": "Porque reconhece que algumas infrações podem ser tratadas de forma corretiva e pedagógica, priorizando adequação de comportamento sem abrir mão da responsabilização e do controle institucional.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "O que indica o fato de algumas faltas não serem passíveis de acordo de ajustamento de conduta?",
+    "expected_answer": "Indica que o regulamento diferencia infrações de menor potencial corretivo de condutas consideradas graves ou incompatíveis com simples ajuste, exigindo resposta mais firme da instituição.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "Qual é o efeito institucional de manter os procedimentos com caráter reservado até a conclusão final?",
+    "expected_answer": "O sigilo protege a integridade da apuração, evita exposição prematura, reduz danos reputacionais indevidos e desestimula interferências externas no processo.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "Por que o regulamento assegura acesso do denunciado ao teor da acusação e aos documentos do processo?",
+    "expected_answer": "Porque busca compatibilizar a investigação ética com garantias mínimas de defesa, contraditório material e conhecimento dos fatos imputados.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "O que a possibilidade de envio dos autos ao Diretor-Presidente em caso de indício penal, civil ou administrativo demonstra sobre o alcance da atuação do Comitê?",
+    "expected_answer": "Demonstra que a atuação do Comitê não se encerra na esfera ética interna e pode servir de ponte para outras providências institucionais ou legais quando a gravidade do caso extrapola o campo ético.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "Por que a publicação da ementa deve omitir nomes e dados que permitam identificar os envolvidos?",
+    "expected_answer": "Porque o regulamento busca conciliar transparência institucional com proteção à privacidade e à reputação das partes, especialmente quando a exposição nominal não é necessária ao interesse público interno.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "Qual a intenção de prever que denúncias feitas de má-fé também podem gerar procedimento contra o denunciante?",
+    "expected_answer": "A intenção é desestimular uso abusivo do sistema de denúncias, preservar a seriedade do Canal de Ética e proteger pessoas e a instituição contra acusações manipuladas ou escusas.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "O que as garantias de emprego e de custeio de defesa para membros e ex-membros do Comitê procuram evitar?",
+    "expected_answer": "Procuram evitar retaliações, insegurança funcional e temor pessoal no exercício das atribuições, fortalecendo a independência e a coragem institucional dos membros.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "Como o regulamento procura equilibrar função sancionatória e função orientadora do Comitê?",
+    "expected_answer": "Ele combina competências de consulta, mediação, conciliação e proposta de ajustes com poderes de apuração, censura ética e recomendação de penalidades, mostrando um modelo simultaneamente preventivo e repressivo.",
+    "question_type": "inferential"
+    }
+    ]
+    

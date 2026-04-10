@@ -202,3 +202,8 @@ Consulte `docs/PAPER-NOTES.md` para justificativas das escolhas técnicas releva
 ## Autores
 
 Tiago Cardoso · Alan Robson — Mestrado em Ciência da Computação
+
+
+docker exec chunking-evaluation-fastapi-1 uv run python evaluation/run_analysis.py --doc-type pdf
+
+docker exec chunking-evaluation-fastapi-1 uv run python evaluation/tables.py

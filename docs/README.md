@@ -2,7 +2,7 @@
 
 **Repositório oficial do artigo:** Avaliação de Estratégias de Chunking em Sistemas RAG para Documentos Institucionais Brasileiros (PDFs + XMLs Lattes)
 
-**Autores:** Tiago + Alan (coautoria possível: George Hideyuki Kuroki Júnior – tese UNB 2023)
+**Autores:** Tiago + Alan
 
 **Objetivo principal:**  
 Comparar 5 estratégias de chunking (fixed-size, recursive, sentence, semantic e structure-aware) em documentos reais de fomento à inovação (EMBRAPII + currículos Lattes CNPq) e medir impacto em recuperação e qualidade de resposta RAG.

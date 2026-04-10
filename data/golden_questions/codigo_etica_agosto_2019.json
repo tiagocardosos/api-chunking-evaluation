@@ -1,0 +1,177 @@
+[
+    {
+       "question":"Quem aprovou o Código de Conduta Ética da EMBRAPII e em que data isso ocorreu?",
+       "expected_answer":"O Código foi aprovado pelo Conselho de Administração em 02/08/2019, durante sua 20ª Reunião Ordinária.",
+       "question_type":"factual"
+    },
+    {
+       "question":"A quais públicos o Código de Conduta Ética da EMBRAPII se aplica?",
+       "expected_answer":"Aplica-se a todos os colaboradores da EMBRAPII, incluindo Direção, Conselho Fiscal e Conselho de Administração; a profissionais de empresas ou autônomos contratados para prestar serviços; e a todos que mantêm contratos, acordos de parceria ou termos de cooperação vigentes com a EMBRAPII.",
+       "question_type":"factual"
+    },
+    {
+       "question":"Quais são os principais objetivos do Código de Conduta Ética da EMBRAPII?",
+       "expected_answer":"Os objetivos incluem orientar o público-alvo sobre princípios de conduta ética, estabelecer referência para a conduta profissional, administrar conflitos de interesse reais ou potenciais, orientar o relacionamento interno e externo, garantir qualidade e rigor técnico associados a princípios éticos e promover boas práticas para a sustentabilidade institucional.",
+       "question_type":"factual"
+    },
+    {
+       "question":"Em quais bases normativas e valores institucionais o Código está fundamentado?",
+       "expected_answer":"O Código está baseado na legislação brasileira vigente, nas políticas de prevenção à lavagem de dinheiro e à corrupção, no respeito aos direitos humanos, no cumprimento das leis brasileiras e no princípio da dignidade da pessoa humana.",
+       "question_type":"factual"
+    },
+    {
+       "question":"Como o documento define má conduta no contexto da EMBRAPII?",
+       "expected_answer":"Má conduta é qualquer transgressão dos valores e princípios descritos no Código, seja intencional ou decorrente de negligência, imprudência ou omissão.",
+       "question_type":"factual"
+    },
+    {
+       "question":"Quais atitudes gerais são exigidas dos colaboradores e parceiros no exercício de suas funções?",
+       "expected_answer":"Devem manter honestidade, integridade, respeito, lealdade, eficiência, transparência e imparcialidade, além de atuar com competência e diligência.",
+       "question_type":"factual"
+    },
+    {
+       "question":"O que o Código determina sobre discriminação e assédio no ambiente institucional?",
+       "expected_answer":"O Código determina que não sejam admitidas quaisquer discriminações ou constrangimentos, incluindo assédio moral e assédio sexual.",
+       "question_type":"factual"
+    },
+    {
+       "question":"Quais práticas trabalhistas são expressamente vedadas nas relações envolvendo a EMBRAPII e seus parceiros?",
+       "expected_answer":"É vedada a exploração de mão-de-obra infantil e de trabalho análogo à escravidão, bem como a permissão para que parceiros adotem tais práticas.",
+       "question_type":"factual"
+    },
+    {
+       "question":"Quais exemplos de más condutas em pesquisa e inovação industrial são citados no documento?",
+       "expected_answer":"São citados a fabricação ou falsificação de dados, procedimentos ou resultados; o plágio; a não observância da confidencialidade de informações; e a prestação, de má-fé ou por negligência, de falsa informação sobre possíveis más condutas em pesquisa tecnológica ou prestação de serviços técnicos.",
+       "question_type":"factual"
+    },
+    {
+       "question":"Como a propriedade intelectual é tratada nas tecnologias, produtos e processos inovadores gerados com recursos da EMBRAPII?",
+       "expected_answer":"A propriedade intelectual é definida em contratos específicos entre as Unidades EMBRAPII e as empresas, conforme estabelecido nos termos de parceria.",
+       "question_type":"factual"
+    },
+    {
+       "question":"O que deve fazer um colaborador ou parceiro que tenha acesso a informação sigilosa ou protegida por acordo de sigilo?",
+       "expected_answer":"Deve manter o sigilo da informação, exceto quando a divulgação for exigida pela justiça.",
+       "question_type":"factual"
+    },
+    {
+       "question":"Qual documento de confidencialidade deve ser firmado pelos colaboradores e parceiros no início de suas atividades?",
+       "expected_answer":"Todos devem firmar um Termo de Confidencialidade no início de suas atividades na EMBRAPII, de forma adequada à natureza do vínculo com a instituição.",
+       "question_type":"factual"
+    },
+    {
+       "question":"Qual é o limite de valor aceito para brindes institucionais ou presentes nas relações típicas e socialmente aceitas?",
+       "expected_answer":"O recebimento deve se limitar a bens sem valor comercial ou com valor inferior a R$ 100,00.",
+       "question_type":"factual"
+    },
+    {
+       "question":"Como o Código caracteriza a lavagem de dinheiro?",
+       "expected_answer":"Caracteriza como o processo de disfarçar a natureza e a origem de dinheiro associado a atividade criminosa, nos termos da Lei nº 9.613/1998.",
+       "question_type":"factual"
+    },
+    {
+       "question":"Quem é responsável por verificar violações ao Código de Conduta Ética da EMBRAPII?",
+       "expected_answer":"O Comitê de Ética da EMBRAPII é o responsável por verificar todas as violações ao Código.",
+       "question_type":"factual"
+    },
+    {
+       "question":"Qual canal o documento indica para comunicação de indícios de infrações éticas?",
+       "expected_answer":"Os indícios de infrações éticas podem ser comunicados pelo Canal de Ética, por meio do e-mail [etica@embrapii.org.br](mailto:etica@embrapii.org.br).",
+       "question_type":"factual"
+    },
+    {
+       "question":"Por que o Código exige que colaboradores e parceiros leiam o documento, declarem ciência e assinem termo de adesão?",
+       "expected_answer":"Porque a EMBRAPII busca formalizar o compromisso individual com as condutas éticas, reforçar a responsabilização dos envolvidos e viabilizar monitoramento e apuração em caso de desvios.",
+       "question_type":"inferential"
+    },
+    {
+       "question":"Qual é a intenção institucional de incluir prevenção, detecção e reação a desvios já na apresentação do Código?",
+       "expected_answer":"A intenção é demonstrar que a ética não deve ser apenas declaratória, mas integrada a um sistema de governança capaz de prevenir problemas, identificá-los quando surgirem e responder a eles de forma estruturada.",
+       "question_type":"inferential"
+    },
+    {
+       "question":"De que forma o Código conecta ética profissional e sustentabilidade institucional?",
+       "expected_answer":"O documento sugere que a sustentabilidade institucional depende não apenas de resultados técnicos, mas também de condutas éticas, de respeito às regras, de integridade nas relações e do uso responsável de recursos e impactos ambientais.",
+       "question_type":"inferential"
+    },
+    {
+       "question":"Qual risco organizacional a EMBRAPII tenta reduzir ao exigir honestidade, transparência e imparcialidade nas relações internas e externas?",
+       "expected_answer":"Ela busca reduzir riscos de favorecimento indevido, perda de credibilidade, conflitos relacionais, decisões enviesadas e danos à imagem institucional.",
+       "question_type":"inferential"
+    },
+    {
+       "question":"Por que o Código trata a negligência, a imprudência e a omissão também como fontes de má conduta, e não apenas atos intencionais?",
+       "expected_answer":"Porque o documento reconhece que danos éticos e institucionais podem ocorrer mesmo sem dolo, e que a responsabilidade profissional envolve cuidado ativo e prevenção de falhas.",
+       "question_type":"inferential"
+    },
+    {
+       "question":"O que a preocupação com diversidade e dignidade humana revela sobre a cultura institucional pretendida pela EMBRAPII?",
+       "expected_answer":"Revela a intenção de construir um ambiente inclusivo, respeitoso e compatível com direitos humanos, no qual diferenças não sejam motivo de exclusão ou tratamento desigual.",
+       "question_type":"inferential"
+    },
+    {
+       "question":"Por que o Código atribui às Unidades EMBRAPII a responsabilidade de garantir que empresas parceiras conheçam o conteúdo ético do documento?",
+       "expected_answer":"Porque a EMBRAPII entende que a integridade da atuação institucional depende também da conduta dos parceiros, e não apenas de seus empregados diretos.",
+       "question_type":"inferential"
+    },
+    {
+       "question":"Como a seção sobre pesquisa e inovação indica que a integridade científica é parte da ética institucional da EMBRAPII?",
+       "expected_answer":"Ela mostra que a ética não se limita a comportamento administrativo, mas inclui veracidade dos dados, respeito à autoria, confidencialidade e responsabilidade técnica nas atividades de P, D&I.",
+       "question_type":"inferential"
+    },
+    {
+       "question":"Que impacto negativo o documento busca evitar ao condenar falsificação, omissão de informações e plágio em atividades de pesquisa?",
+       "expected_answer":"Busca evitar comprometimento da validade técnico-científica, prejuízos a projetos em execução, decisões baseadas em informações incorretas e danos à confiança entre instituição, pesquisadores e parceiros.",
+       "question_type":"inferential"
+    },
+    {
+       "question":"Qual é a lógica de exigir sigilo e termos de confidencialidade para colaboradores e parceiros desde o início do vínculo?",
+       "expected_answer":"A lógica é proteger informações sensíveis, reduzir riscos jurídicos e contratuais, preservar confiança com parceiros e estabelecer desde o começo obrigações claras de responsabilidade informacional.",
+       "question_type":"inferential"
+    },
+    {
+       "question":"Por que o Código admite exceção ao sigilo quando a divulgação é exigida pela justiça?",
+       "expected_answer":"Porque o documento procura equilibrar a obrigação de confidencialidade com o dever de cumprir determinações legais e judiciais.",
+       "question_type":"inferential"
+    },
+    {
+       "question":"O que o limite para recebimento de brindes e presentes pretende evitar nas relações profissionais?",
+       "expected_answer":"Pretende evitar influências indevidas, favorecimentos, percepção de compra de decisão e situações que comprometam a independência ou a imagem de integridade dos envolvidos.",
+       "question_type":"inferential"
+    },
+    {
+       "question":"Como a seção de conflito de interesses demonstra preocupação com situações indiretas, e não apenas com ganhos pessoais imediatos?",
+       "expected_answer":"Ela amplia o conceito para incluir familiares, parentes, oportunidades de emprego, consultoria e interesses financeiros de organizações relacionadas, mostrando que o conflito pode surgir de vínculos diversos e não só de benefício direto ao colaborador.",
+       "question_type":"inferential"
+    },
+    {
+       "question":"Por que o Código exige que o colaborador se afaste de decisões quando houver interesse particular envolvido?",
+       "expected_answer":"Porque a imparcialidade da decisão pode ser comprometida, e a simples possibilidade de influência inadequada já ameaça a legitimidade e a confiança no processo decisório.",
+       "question_type":"inferential"
+    },
+    {
+       "question":"O que a garantia de confidencialidade, anonimato facultado e proibição de represália indica sobre a função do Canal de Ética?",
+       "expected_answer":"Indica que o Canal foi concebido para incentivar relatos de boa-fé, reduzir medo de retaliação e ampliar a capacidade institucional de identificar e apurar desvios.",
+       "question_type":"inferential"
+    },
+    {
+       "question":"Qual é a importância de o corpo diretivo promover distribuição, treinamento e monitoramento do Código, em vez de apenas publicá-lo?",
+       "expected_answer":"Isso demonstra que a efetividade do Código depende de implementação ativa, formação contínua e acompanhamento institucional, e não apenas da existência formal do documento.",
+       "question_type":"inferential"
+    },
+    {
+       "question":"Como o documento equilibra apuração de infrações e garantias individuais durante investigações internas?",
+       "expected_answer":"Ele prevê investigação interna, mas afirma que devem ser assegurados o devido processo legal, a ampla defesa e o sigilo das partes quando necessário.",
+       "question_type":"inferential"
+    },
+    {
+       "question":"Por que o Código prevê que demandas não relacionadas a desvios éticos possam ser redirecionadas para Compliance, superior hierárquico ou Recursos Humanos?",
+       "expected_answer":"Porque a EMBRAPII procura preservar o foco do Canal de Ética e do Comitê de Ética em infrações éticas, encaminhando outros temas para instâncias mais adequadas de tratamento institucional.",
+       "question_type":"inferential"
+    },
+    {
+       "question":"O que a responsabilidade atribuída a pessoas em funções de direção, coordenação ou gerência revela sobre a visão da EMBRAPII quanto à liderança ética?",
+       "expected_answer":"Revela que a liderança não é vista apenas como execução de tarefas, mas também como dever de supervisão, prevenção de omissões e apuração de violações cometidas por subordinados.",
+       "question_type":"inferential"
+    }
+ ]

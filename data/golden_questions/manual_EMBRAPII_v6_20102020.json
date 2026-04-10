@@ -1,0 +1,754 @@
+[
+    {
+    "question": "Qual é a versão do Manual de Operação EMBRAPII apresentada no documento e qual a data dessa revisão geral?",
+    "expected_answer": "Trata-se da versão 6.0 do Manual de Operação EMBRAPII, correspondente à revisão geral de 18-09-2020.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Quais mudanças principais foram destacadas no controle de versões da versão 6.0 do manual?",
+    "expected_answer": "Foram destacadas a unificação dos manuais dos Polos e das Unidades EMBRAPII, alterações na forma de participação da Empresa e da Unidade no financiamento dos projetos, formalização das Orientações Operacionais como instrumentos normativos complementares, formalização de diferentes possibilidades de credenciamento, formalização de programas especiais decorrentes de parcerias estratégicas, incorporação de normas das Orientações Operacionais 02/2017, 01/2018 e 02/2019, além da incorporação da escala de TRL para Fármacos e Biofármacos e sua equivalência com a escala TRL ISO 16290.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Qual é o objetivo central do Manual de Operação EMBRAPII?",
+    "expected_answer": "O manual estabelece normas de operação para as instituições credenciadas pela EMBRAPII, fixa critérios e procedimentos para aplicação dos recursos financeiros e define regras para acompanhamento e avaliação do desempenho físico e financeiro das Unidades EMBRAPII.",
+    "question_type": "factual"
+    },
+    {
+    "question": "O manual pode ser complementado por outros instrumentos normativos?",
+    "expected_answer": "Sim. O conteúdo do manual pode ser complementado por normas adicionais formalizadas por Orientações Operacionais publicadas pela EMBRAPII.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Como a EMBRAPII é caracterizada no modelo de operação descrito no manual?",
+    "expected_answer": "A EMBRAPII é caracterizada como uma instituição privada sem fins lucrativos, qualificada como Organização Social pelo Poder Público Federal em setembro de 2013.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Quais ministérios firmaram o Contrato de Gestão com a EMBRAPII e qual ministério passou a integrar esse contrato a partir de 2018?",
+    "expected_answer": "O Contrato de Gestão foi firmado com o Ministério da Ciência, Tecnologia e Inovações (MCTI) e o Ministério da Educação (MEC). A partir de 2018, o Ministério da Saúde (MS) passou a integrar o contrato por meio de termo aditivo.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Quais instituições podem se tornar Unidades EMBRAPII, segundo o modelo descrito no manual?",
+    "expected_answer": "Podem se tornar Unidades EMBRAPII instituições de pesquisa científica e tecnológica, públicas ou privadas sem fins lucrativos, com experiência comprovada no desenvolvimento de projetos de inovação em parceria com empresas do setor industrial.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Por quais meios pode ocorrer o processo de seleção e credenciamento das instituições de pesquisa pela EMBRAPII?",
+    "expected_answer": "O processo pode ocorrer por chamadas públicas, carta-convite ou encomendas, a critério do Conselho de Administração da EMBRAPII.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Qual é o período típico de credenciamento de uma Unidade EMBRAPII?",
+    "expected_answer": "O período típico de credenciamento é de três ou seis anos, a depender das condições específicas de credenciamento.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Quais são as premissas para a atuação de uma Unidade EMBRAPII?",
+    "expected_answer": "As premissas incluem autonomia para firmar e executar projetos de PD&I em parceria com empresas industriais na área credenciada, foco na demanda industrial por P&D visando à inovação, compromisso com a obtenção de resultados para as empresas parceiras, emprego de boas práticas na condução das atividades de PD&I e capacidade própria para execução de projetos, incluindo recursos humanos e infraestrutura.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Quais processos internos a Unidade EMBRAPII deve manter para buscar melhores resultados nas parcerias?",
+    "expected_answer": "A Unidade deve manter processos internos voltados a prospecção de negócios, negociação de projetos, gestão de projetos, gestão de propriedade intelectual, comunicação e gestão administrativa e financeira.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Quais condições mínimas um projeto deve atender para ser contratado como projeto EMBRAPII em parceria com empresa?",
+    "expected_answer": "O projeto deve atender aos requisitos de caracterização de projeto EMBRAPII, ser cofinanciado por empresa, contar com pelo menos uma empresa contratante com produção no País e pertencente ao setor industrial ou beneficiária da Lei de Informática, ter objetivo voltado à produção da inovação no País e prever contratualmente a participação da empresa parceira em avaliações conduzidas pela EMBRAPII ao término do projeto.",
+    "question_type": "factual"
+    },
+    {
+    "question": "O que o manual determina sobre a responsabilidade da EMBRAPII quanto ao uso dos resultados dos projetos fora do seu âmbito de desenvolvimento?",
+    "expected_answer": "O manual determina que os contratos devem conter a cláusula de que a EMBRAPII não se responsabiliza pela utilização de quaisquer resultados do projeto fora do seu âmbito de desenvolvimento.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Quem negocia os termos de propriedade intelectual, sigilo e exploração comercial dos resultados dos projetos?",
+    "expected_answer": "Esses termos são negociados exclusivamente entre a Unidade e a(s) empresa(s) parceira(s), sem participação da EMBRAPII.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Onde devem ser feitos os depósitos de pedidos de proteção de propriedade intelectual gerada nos projetos?",
+    "expected_answer": "Os depósitos devem ser feitos necessariamente junto ao Instituto Nacional de Propriedade Industrial (INPI) e registrados no sistema de acompanhamento da EMBRAPII.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Em quais níveis de maturidade tecnológica devem se situar os resultados dos projetos EMBRAPII?",
+    "expected_answer": "Os resultados previstos nos projetos de PD&I contratados devem pertencer aos níveis de maturidade tecnológica de 3 a 6.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Qual é a função das macroentregas no acompanhamento dos projetos EMBRAPII?",
+    "expected_answer": "As macroentregas representam marcos na execução física do projeto e servem como balizadores da execução físico-financeira do contrato firmado entre a Unidade e a empresa parceira.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Quantas macroentregas são recomendadas, por convenção, na elaboração de cada projeto EMBRAPII?",
+    "expected_answer": "Por convenção, recomenda-se prever entre três e cinco macroentregas não sobrepostas, a depender do porte e do prazo de execução do projeto.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Qual é a regra geral de composição de recursos no financiamento da carteira de projetos contratada com recursos do Contrato de Gestão?",
+    "expected_answer": "A contribuição da EMBRAPII pode ser no máximo equivalente a 1/3 do valor total da carteira de projetos contratada; os 2/3 restantes devem ser negociados entre a Unidade e as empresas parceiras; a participação financeira das empresas não deve ser inferior a 1/3 do valor total da carteira; e a participação da Unidade pode ser financeira ou não financeira.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Qual é o aporte mínimo da EMBRAPII e da empresa parceira em cada projeto individual?",
+    "expected_answer": "O aporte financeiro da EMBRAPII não pode ser inferior a 10% do valor do projeto e o aporte financeiro da(s) empresa(s) parceira(s) também não pode ser inferior a 10% do valor do projeto.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Quais são os itens financiáveis do projeto EMBRAPII listados no manual?",
+    "expected_answer": "Os itens financiáveis são: pessoal, material de consumo, diárias, passagens e despesas de locomoção, serviços de terceiros pessoa física e jurídica, despesas de suporte operacional e outras despesas correntes.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Em que condição a aquisição de equipamentos e material permanente é admitida no projeto?",
+    "expected_answer": "A aquisição de equipamentos e material permanente, incluindo software, é admitida somente para componentes integrados ao resultado do projeto e, nesse caso, devem ser utilizados exclusivamente recursos da(s) empresa(s) parceira(s).",
+    "question_type": "factual"
+    },
+    {
+    "question": "Que tipo de uso dos recursos do projeto é expressamente proibido quanto a infraestrutura física?",
+    "expected_answer": "Não é permitida a utilização dos recursos financeiros do projeto para investimentos em obras civis ou ampliação/criação de instalações físicas da Unidade.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Qual é o limite máximo para despesas com contratação de pessoa física e jurídica para realização de atividades de PD&I?",
+    "expected_answer": "A soma dessas despesas não pode ser superior a 30% do valor total do projeto.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Qual é o limite para despesas de suporte operacional com recursos da empresa parceira?",
+    "expected_answer": "A Unidade pode utilizar, exclusivamente com recursos originários da(s) empresa(s) parceira(s), até 15% do valor total do projeto para despesas de suporte operacional, sem necessidade de discriminá-las.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Quais itens podem ser considerados como contrapartida não financeira da Unidade EMBRAPII no projeto?",
+    "expected_answer": "Podem ser considerados pessoal, material de consumo, diárias, passagens e despesas de locomoção, serviços de terceiros pessoa física e jurídica, despesas de suporte operacional e uso de equipamento laboratorial e de software de P,D&I próprios.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Como deve ser feita a liberação de recursos financeiros da EMBRAPII para a Unidade?",
+    "expected_answer": "A liberação requer a abertura de conta bancária exclusiva em instituição financeira controlada pela União, destinada ao recebimento dos recursos da EMBRAPII e à transferência para as contas dos projetos contratados.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Quantas contas bancárias devem ser abertas, no mínimo, para a execução financeira de cada projeto?",
+    "expected_answer": "Devem ser abertas pelo menos duas contas bancárias: uma para movimentação dos recursos da EMBRAPII e outra para movimentação dos recursos da(s) empresa(s) parceira(s) no projeto.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Quais são as datas-limite para entrega das prestações de contas semestrais?",
+    "expected_answer": "As datas-limite são 31 de janeiro, referente ao período julho-dezembro, e 31 de julho, referente ao período janeiro-junho.",
+    "question_type": "factual"
+    },
+    {
+    "question": "O que é o SRInfo no contexto do acompanhamento das Unidades EMBRAPII?",
+    "expected_answer": "O SRInfo é o Sistema de Registro de Informações utilizado pela EMBRAPII para acompanhar continuamente as atividades das Unidades, incluindo prospecções, negociações, projetos, informações financeiras, análises e prestações de contas.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Até quando a Unidade deve manter os documentos comprobatórios originais relacionados à prestação de contas?",
+    "expected_answer": "Os documentos comprobatórios originais devem permanecer sob guarda da instituição de pesquisa por 10 anos após a aprovação da prestação de contas final do Plano de Ação contratado com a EMBRAPII.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Quais modalidades de monitoramento compõem o acompanhamento contínuo das Unidades EMBRAPII?",
+    "expected_answer": "O acompanhamento contínuo abrange rotina de acompanhamento mensal, reuniões de acompanhamento e inspeções presenciais ou virtuais.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Quais são as penalidades previstas pelo manual em caso de descumprimento de regras de execução técnica ou financeira?",
+    "expected_answer": "As penalidades podem compreender advertência, bloqueio de conta, suspensão de contratação de projetos, devolução de recursos e descredenciamento.",
+    "question_type": "factual"
+    },
+    {
+    "question": "Por que o manual unifica os antigos manuais de Polos e de Unidades EMBRAPII em uma única referência?",
+    "expected_answer": "A unificação busca refletir a maturidade operacional alcançada pela rede credenciada, otimizar processos administrativos e de acompanhamento e estabelecer uma referência primária única para todos os partícipes da rede.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "O que a exigência de contrapartida financeira das empresas indica sobre a lógica do modelo EMBRAPII?",
+    "expected_answer": "Indica que a EMBRAPII busca assegurar comprometimento real das empresas com o projeto, compartilhamento de riscos e validação da confiança da empresa na capacidade da Unidade para gerar resultados.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "Por que o manual enfatiza flexibilidade operacional para as Unidades, mas ao mesmo tempo exige metas de desempenho e avaliação contínua?",
+    "expected_answer": "Porque o modelo procura combinar autonomia na gestão dos projetos com mecanismos de responsabilização e monitoramento, garantindo que a flexibilidade não comprometa resultados, conformidade e entrega de valor.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "Qual a intenção de restringir os projetos EMBRAPII aos níveis TRL 3 a 6?",
+    "expected_answer": "A intenção é concentrar o apoio em projetos na fase pré-competitiva da inovação, marcada por maior risco tecnológico, evitando tanto atividades ainda excessivamente básicas quanto soluções já maduras para implantação comercial direta.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "Por que a prestação de serviços não pode constituir objetivo de um projeto EMBRAPII?",
+    "expected_answer": "Porque o foco do modelo EMBRAPII é o desenvolvimento de PD&I voltado à inovação tecnológica e à geração de resultados com risco tecnológico, e não a simples execução de serviços rotineiros ou convencionais.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "O que o equilíbrio esperado entre macroentregas em duração, esforço, orçamento e fontes de recursos busca evitar?",
+    "expected_answer": "Busca evitar concentração excessiva de riscos, desembolsos desproporcionais e desorganização na execução físico-financeira, promovendo melhor controle do avanço do projeto e do compromisso entre as partes.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "Por que o manual exige que a empresa parceira aceite formalmente cada macroentrega?",
+    "expected_answer": "Porque o aceite formal funciona como evidência de cumprimento das entregas, reforça a validação do avanço técnico pela empresa e sustenta o acompanhamento físico-financeiro e a prestação de contas do projeto.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "Qual o sentido de exigir que pelo menos uma empresa contratante tenha produção no País ou pertença ao setor industrial, ou que formalize esse compromisso durante o projeto?",
+    "expected_answer": "A exigência busca alinhar os projetos à missão institucional da EMBRAPII de promover inovação com potencial de industrialização no País, conectando o esforço de PD&I a resultados econômicos e tecnológicos concretos na indústria brasileira.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "Por que o manual atribui responsabilidade exclusiva à instituição credenciada pela execução dos projetos, aplicação dos recursos e prestação de contas?",
+    "expected_answer": "Porque a EMBRAPII adota um modelo de autonomia com responsabilização direta da Unidade, deixando claro quem responde pela governança do projeto, pela conformidade financeira e pelos resultados obtidos.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "Qual problema o manual procura prevenir ao vedar a contratação direta de pessoa jurídica com sócio ou administrador que tenha parentesco com dirigente da Unidade ou da entidade gestora financeira?",
+    "expected_answer": "Procura prevenir conflitos de interesse, favorecimentos indevidos e comprometimento da impessoalidade, moralidade e probidade nos processos de aquisição e contratação.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "Por que os recursos da EMBRAPII não podem ser transferidos a título de adiantamento para as contas da empresa ou da Unidade?",
+    "expected_answer": "Porque o manual procura evitar desvio de finalidade, uso indevido dos recursos e perda de rastreabilidade financeira, assegurando que os valores sejam movimentados apenas para despesas efetivamente vinculadas aos projetos e às atividades inerentes à Unidade.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "O que a exigência de registrar desde a prospecção até o encerramento dos projetos no SRInfo revela sobre a governança do modelo EMBRAPII?",
+    "expected_answer": "Revela uma governança orientada por rastreabilidade, transparência, capacidade de planejamento e monitoramento contínuo de todo o ciclo de vida da atividade credenciada.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "Por que o manual prevê auditoria e perícia técnica como processos especiais não rotineiros?",
+    "expected_answer": "Porque esses mecanismos são reservados para situações de maior risco, inconsistência, irregularidade ou dúvida técnica relevante, funcionando como instrumentos extraordinários de controle e verificação aprofundada.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "Qual é a lógica de comunicar formalmente à Unidade o risco de descredenciamento antes da decisão final?",
+    "expected_answer": "A lógica é permitir correção de rumo, preservar a continuidade adequada dos projetos em andamento e assegurar tratamento mais justo e preventivo antes de uma medida extrema.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "O que a exigência de uso visível da marca EMBRAPII em documentação, website e materiais de divulgação sugere sobre o papel institucional da marca?",
+    "expected_answer": "Sugere que a marca funciona como elemento de identificação pública, transparência, padronização e reconhecimento do apoio institucional da EMBRAPII nos projetos e nas Unidades credenciadas.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "Por que o manual admite customização das escalas de maturidade tecnológica em casos específicos, desde que haja anuência da EMBRAPII?",
+    "expected_answer": "Porque reconhece que tecnologias muito específicas ou novas podem não se encaixar perfeitamente nas escalas gerais, mas exige validação prévia para manter consistência metodológica no acompanhamento e na avaliação.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "Qual interpretação pode ser feita sobre a recomendação de aplicar os recursos não utilizados em aplicações de baixo risco e reverter os rendimentos aos objetivos do Plano de Ação?",
+    "expected_answer": "Essa regra mostra preocupação com boa gestão financeira, preservação do valor dos recursos e vinculação integral dos rendimentos ao interesse institucional e aos objetivos aprovados no credenciamento.",
+    "question_type": "inferential"
+    },
+    {
+    "question": "O que a previsão de avaliações ao final do primeiro ano, avaliações parciais a cada dois anos e balanço geral do desempenho indica sobre a estratégia de acompanhamento da EMBRAPII?",
+    "expected_answer": "Indica uma estratégia escalonada de acompanhamento, com momentos de validação inicial, revisão periódica e julgamento amplo da trajetória da Unidade, combinando controle contínuo com avaliação de longo prazo.",
+    "question_type": "inferential"
+    },
+        {
+        "question": "O que o manual informa sobre a necessidade de a Unidade acompanhar revisões do próprio manual e das normas adicionais publicadas pela EMBRAPII?",
+        "expected_answer": "Cabe à Unidade credenciada se manter atualizada sobre o conteúdo e eventuais revisões do Manual, bem como sobre as normas adicionais publicadas pela EMBRAPII, em caráter temporário ou permanente.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Qual documento deve detalhar o planejamento e a estratégia para captação e execução de projetos de inovação da instituição candidata a Unidade EMBRAPII?",
+        "expected_answer": "Esse documento é o Plano de Ação.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Que tipo de despesas predominam nos projetos contratados no âmbito da EMBRAPII, em razão da exigência de infraestrutura já existente na Unidade?",
+        "expected_answer": "Predominam despesas de custeio, incluindo pessoal.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Quem estabelece orientações e condições específicas relativas a áreas prioritárias, período, modelo financeiro e outras condições de cada processo de credenciamento?",
+        "expected_answer": "O Conselho de Administração da EMBRAPII.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Além do volume de recursos, o que mais o instrumento contratual do credenciamento fixa para a Unidade EMBRAPII?",
+        "expected_answer": "Fixa as metas de desempenho a serem atendidas e demais compromissos.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Que programa pode ser pactuado no credenciamento, dependendo das condições específicas, mas não é discutido em detalhe no manual?",
+        "expected_answer": "Pode ser pactuado um Programa de Formação de RH para PD&I.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Que compromisso adicional de gestão pode fazer parte do credenciamento em casos específicos?",
+        "expected_answer": "Pode envolver um compromisso de aprimoramento da gestão da Unidade, realizado segundo o Sistema de Excelência Operacional EMBRAPII a partir da avaliação da maturidade operacional e da elaboração de plano de estruturação.",
+        "question_type": "factual"
+        },
+        {
+        "question": "O que a proposta técnica deve conter, no mínimo, durante o processo de negociação do projeto?",
+        "expected_answer": "Deve conter, no mínimo, a definição de escopo e o objetivo do projeto.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Quais elementos obrigatórios devem constar no plano de trabalho de um projeto EMBRAPII?",
+        "expected_answer": "Deve conter objeto da parceria, atividades a serem desenvolvidas, valor do projeto e respectivos aportes e contrapartidas, responsabilidades das partes, cronograma físico-financeiro e macroentregas.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Em um projeto com coexecução entre Unidades EMBRAPII, como a coexecução é identificada pela EMBRAPII?",
+        "expected_answer": "Pela existência de um único documento contratual do projeto, no qual as diversas Unidades envolvidas sejam signatárias.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Na coexecução de um projeto, que obrigação recai necessariamente sobre uma das instituições credenciadas?",
+        "expected_answer": "Uma das instituições credenciadas deve assumir a responsabilidade técnica pelo projeto frente à(s) empresa(s) contratante(s).",
+        "question_type": "factual"
+        },
+        {
+        "question": "Como devem ser tratadas as prestações de contas em projetos executados em coexecução?",
+        "expected_answer": "Devem ser encaminhadas de forma individualizada por cada Unidade, de acordo com sua respectiva participação no projeto, embora a avaliação técnica seja realizada como um projeto único.",
+        "question_type": "factual"
+        },
+        {
+        "question": "O que o manual afirma sobre a relação entre a área de competência da Unidade e os projetos contratados?",
+        "expected_answer": "O projeto de PD&I apoiado pela EMBRAPII deve ser consistente com a identidade tecnológica da Unidade executora, expressa por sua área de competência.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Como o manual define o período de execução de um projeto para fins de prestação de contas?",
+        "expected_answer": "É definido pelo início da vigência contratual até a data de aceite, pela(s) empresa(s), da última macroentrega, desde que respeitado o prazo final contratualmente estabelecido.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Que formalidade é exigida para alterações nos prazos de vigência dos projetos?",
+        "expected_answer": "Toda alteração nos prazos de vigência deve ser fundamentada por meio de aditivos entre as partes, devidamente cadastrados no sistema de acompanhamento da EMBRAPII.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Que consequência o manual prevê para atrasos não justificados na execução dos projetos?",
+        "expected_answer": "Atrasos não justificados são considerados na avaliação de desempenho da Unidade.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Em projetos cujo aporte empresarial decorra de obrigação de investimento em P&D, qual participação mínima a empresa deve ter no valor do projeto?",
+        "expected_answer": "Nesses casos, a participação da empresa não pode ser inferior a 50% do valor do projeto.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Como deve ser tratada a contrapartida financeira da Unidade em cada projeto?",
+        "expected_answer": "A contrapartida financeira da Unidade deve ter conta própria para cada projeto.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Quem pode receber despesas de passagens, locomoção e diárias financiadas pelo projeto?",
+        "expected_answer": "Somente integrantes da equipe de PD&I e da equipe da Unidade EMBRAPII.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Que regra específica o manual estabelece para despesas bancárias e outras despesas após o aceite da última macroentrega?",
+        "expected_answer": "Até 60 dias após o aceite da última macroentrega, ainda são admitidas despesas pertinentes ao período de execução do projeto e comprometidas nesse mesmo período, incluindo despesas bancárias pertinentes à execução do projeto.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Qual limite deve ser observado para despesas de suporte operacional quando lançadas como contrapartida não financeira da Unidade?",
+        "expected_answer": "Esse item não poderá ultrapassar 15% do valor total do projeto, considerando tanto as fontes financeiras como não financeiras.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Que tipos de software não podem ser lançados como contrapartida não financeira da Unidade?",
+        "expected_answer": "Não é permitido o lançamento de software corporativo, como família Office, Windows, antivírus, VPN e ERP.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Por quanto tempo os documentos originais dos processos de aquisição e contratação devem permanecer acessíveis à EMBRAPII e aos órgãos de controle?",
+        "expected_answer": "Devem permanecer acessíveis por dez anos após a aprovação da prestação de contas.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Em que instituição financeira deve ser aberta a Conta Específica EMBRAPII para liberação de recursos?",
+        "expected_answer": "Deve ser aberta em instituição financeira controlada pela União.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Como ocorre a liberação da primeira parcela de recursos da EMBRAPII para a Unidade?",
+        "expected_answer": "A primeira parcela é antecipada e realizada logo após a assinatura do Termo de Cooperação, em valor determinado a critério exclusivo da EMBRAPII para prover o suporte financeiro necessário e compatível com os compromissos pactuados.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Que documento deve ser assinado e enviado em via original à EMBRAPII na prestação de contas semestral?",
+        "expected_answer": "A Declaração de Certificação dos dados preenchidos e documentos anexados no SRInfo, assinada pelo Coordenador e pelo contador da Unidade.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Em quanto tempo os valores não aprovados nas prestações de contas devem ser devolvidos às suas origens?",
+        "expected_answer": "Devem ser devolvidos em até 60 dias a partir da comunicação feita pelo Parecer de Prestação de Contas.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Por qual índice os valores não aprovados passam a ser atualizados se não forem devolvidos no prazo previsto?",
+        "expected_answer": "Passam a ser atualizados pelo IGP-M, desde a emissão do Parecer.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Quem elabora e aprova o Parecer de Prestação de Contas?",
+        "expected_answer": "O parecer é elaborado por, no mínimo, dois especialistas, um da parte técnica e outro da parte financeira, e aprovado pela Diretoria de Operações da EMBRAPII.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Até quando as Unidades devem lançar os registros declaratórios do acompanhamento mensal no SRInfo?",
+        "expected_answer": "Devem lançar os registros até o 5º dia útil do mês subsequente ao mês de referência.",
+        "question_type": "factual"
+        },
+        {
+        "question": "Por que o manual trata a agilidade operacional como elemento essencial no modelo EMBRAPII?",
+        "expected_answer": "Porque entende que a rapidez na formação e execução das parcerias é decisiva para o andamento dos projetos e para a obtenção de resultados de inovação pelas empresas parceiras.",
+        "question_type": "inferential"
+        },
+        {
+        "question": "O que a exigência de infraestrutura adequada e capacidade própria da Unidade revela sobre o tipo de instituição que a EMBRAPII pretende credenciar?",
+        "expected_answer": "Revela que a EMBRAPII pretende credenciar instituições já capazes de executar projetos complexos de PD&I, com competência instalada e condições reais de entrega, e não estruturas ainda dependentes de consolidação básica.",
+        "question_type": "inferential"
+        },
+        {
+        "question": "Por que o manual insiste que a governança da Unidade e a responsabilidade pelos resultados são intransferíveis?",
+        "expected_answer": "Porque busca deixar claro que a autonomia concedida à Unidade vem acompanhada de responsabilização integral por decisões, execução, conformidade e desempenho alcançado.",
+        "question_type": "inferential"
+        },
+        {
+        "question": "Qual o efeito prático de exigir que a proposta técnica contenha objetivo e escopo mínimos desde o início da negociação?",
+        "expected_answer": "Isso ajuda a delimitar desde cedo o problema tecnológico, alinhar expectativas entre as partes e evitar negociações sem base suficientemente definida para evoluir para contratação.",
+        "question_type": "inferential"
+        },
+        {
+        "question": "Por que a EMBRAPII exige que a Unidade registre no sistema informações também sobre prospecções, comunicação e negociações, e não apenas sobre projetos já contratados?",
+        "expected_answer": "Porque quer acompanhar não só os resultados finais, mas também a dinâmica de geração de oportunidades, amadurecimento da carteira e capacidade comercial e operacional da Unidade.",
+        "question_type": "inferential"
+        },
+        {
+        "question": "O que a possibilidade de coexecução entre Unidades sugere sobre a visão da EMBRAPII em relação à complementaridade de competências?",
+        "expected_answer": "Sugere que o modelo reconhece que desafios tecnológicos podem exigir competências complementares e que a articulação entre Unidades pode ampliar a capacidade de entrega dos projetos.",
+        "question_type": "inferential"
+        },
+        {
+        "question": "Por que, mesmo em projetos de coexecução, uma única instituição deve assumir a responsabilidade técnica perante a empresa?",
+        "expected_answer": "Porque é necessário haver referência clara de liderança técnica, coordenação e accountability perante a empresa parceira, evitando dispersão de responsabilidades.",
+        "question_type": "inferential"
+        },
+        {
+        "question": "Qual problema de gestão o manual busca evitar ao exigir que as macroentregas não sejam sobrepostas no tempo?",
+        "expected_answer": "Busca evitar confusão no acompanhamento do progresso, dificultar o controle dos marcos de aceite e comprometer a rastreabilidade entre avanço técnico, cronograma e execução financeira.",
+        "question_type": "inferential"
+        },
+        {
+        "question": "Por que o manual recomenda execução equilibrada dos recursos das diferentes fontes ao longo do projeto?",
+        "expected_answer": "Porque isso favorece equilíbrio financeiro, reduz riscos de concentração inadequada de gastos em uma única fonte e melhora a aderência entre planejamento, execução e prestação de contas.",
+        "question_type": "inferential"
+        },
+        {
+        "question": "O que a exigência de conta própria para a contrapartida financeira da Unidade demonstra sobre o controle financeiro do modelo?",
+        "expected_answer": "Demonstra preocupação com segregação de recursos, rastreabilidade por fonte financeira e maior precisão no controle e na auditoria de cada projeto.",
+        "question_type": "inferential"
+        },
+        {
+        "question": "Por que o manual restringe o uso de equipamentos e software permanentes, em regra, aos recursos da empresa parceira e apenas quando integrados ao resultado do projeto?",
+        "expected_answer": "Porque o modelo prioriza custeio voltado à execução de PD&I e evita que recursos da EMBRAPII sejam desviados para estruturação patrimonial ampla da Unidade.",
+        "question_type": "inferential"
+        },
+        {
+        "question": "Qual a razão provável para o manual não permitir provisionamento contábil de verbas rescisórias, mas admitir despesas rescisórias em casos específicos de contratação temporária durante a vigência do projeto?",
+        "expected_answer": "A regra busca evitar reservas genéricas e pouco rastreáveis, mas admite custos rescisórios quando estiverem diretamente vinculados a contratações temporárias efetivamente necessárias ao projeto e ocorridas dentro de sua vigência.",
+        "question_type": "inferential"
+        },
+        {
+        "question": "Por que o manual limita a 30% do valor total do projeto a soma das despesas com contratação de pessoas físicas e jurídicas para atividades de PD&I?",
+        "expected_answer": "Porque procura preservar a centralidade da capacidade própria da Unidade na execução do projeto e evitar terceirização excessiva do esforço principal de pesquisa e desenvolvimento.",
+        "question_type": "inferential"
+        },
+        {
+        "question": "Qual o objetivo de permitir ressarcimento de certas despesas prévias à contratação do projeto apenas dentro de limites temporais específicos?",
+        "expected_answer": "O objetivo é reconhecer esforços preparatórios legítimos da Unidade sem abrir espaço para lançamento de despesas antigas, desconectadas ou pouco demonstráveis em relação ao projeto contratado.",
+        "question_type": "inferential"
+        },
+        {
+        "question": "Por que o uso de software como contrapartida não financeira depende de relevância clara para os resultados do projeto e exclui softwares corporativos genéricos?",
+        "expected_answer": "Porque a EMBRAPII quer que apenas recursos efetivamente técnicos e diretamente relacionados ao desenvolvimento do projeto sejam apropriados como contrapartida, evitando inflar artificialmente custos com ferramentas de uso administrativo geral.",
+        "question_type": "inferential"
+        },
+        {
+        "question": "O que a exigência de pesquisa de mercado prévia nas contratações busca assegurar além da formalidade documental?",
+        "expected_answer": "Busca assegurar razoabilidade de preços, maior transparência, impessoalidade e melhor uso dos recursos empregados nos projetos.",
+        "question_type": "inferential"
+        },
+        {
+        "question": "Qual a finalidade de exigir aplicações de baixo risco para recursos não utilizados da EMBRAPII e das contas dos projetos?",
+        "expected_answer": "A finalidade é preservar a segurança dos recursos, evitar exposição desnecessária a perdas financeiras e ainda aproveitar rendimentos em benefício dos objetivos do Plano de Ação.",
+        "question_type": "inferential"
+        },
+        {
+        "question": "Por que a prestação de contas é estruturada por projeto, por fonte de recurso e por item de despesa?",
+        "expected_answer": "Porque essa estrutura permite rastreabilidade detalhada, separação clara das responsabilidades financeiras e verificação precisa da conformidade com as regras aplicáveis a cada fonte e categoria de gasto.",
+        "question_type": "inferential"
+        },
+        {
+        "question": "O que a exigência de assinatura conjunta do coordenador e do contador na certificação da prestação de contas sugere sobre o modelo de responsabilização interna da Unidade?",
+        "expected_answer": "Sugere um modelo de corresponsabilidade entre a gestão técnica e a gestão contábil-financeira, reforçando a confiabilidade das informações apresentadas à EMBRAPII.",
+        "question_type": "inferential"
+        },
+        {
+        "question": "Por que a inspeção verifica tanto a consistência entre execução técnica e financeira quanto os documentos comprobatórios originais?",
+        "expected_answer": "Porque a EMBRAPII busca validar se os gastos realizados correspondem de fato ao avanço técnico declarado e se há lastro documental suficiente para comprovar essa correspondência.",
+        "question_type": "inferential"
+        },
+        {
+        "question": "Qual a vantagem institucional de manter um sistema de tickets oficial além do SRInfo?",
+        "expected_answer": "Isso permite comunicação formal, transversal e rastreável sobre temas operacionais e de suporte que não dependem apenas do registro estruturado de dados no SRInfo.",
+        "question_type": "inferential"
+        },
+        {
+        "question": "Por que o manual combina avaliações periódicas, inspeções, auditorias e eventual avaliação de impacto em período posterior ao encerramento dos Planos de Ação?",
+        "expected_answer": "Porque pretende avaliar a Unidade em múltiplas dimensões e horizontes temporais, combinando conformidade imediata, desempenho operacional contínuo e resultados mais amplos gerados ao longo do tempo.",
+        "question_type": "inferential"
+        },
+        
+            {
+            "question": "Segundo o manual, qual é a expectativa da EMBRAPII em relação à versão 6.0 publicada?",
+            "expected_answer": "A expectativa é que a versão publicada contemple todas as orientações vigentes e auxilie na visão consolidada para o conjunto de Unidades credenciadas e todos os seus partícipes.",
+            "question_type": "factual"
+            },
+            {
+            "question": "Desde quando a rede de grupos credenciados pela EMBRAPII começou a se ampliar, segundo a apresentação do manual?",
+            "expected_answer": "Desde a fundação da EMBRAPII em 2013, com o credenciamento das primeiras Unidades no ano seguinte.",
+            "question_type": "factual"
+            },
+            {
+            "question": "Qual expressão o manual usa para designar todas as instituições credenciadas, independentemente de especificidades anteriores?",
+            "expected_answer": "Todas as instituições passam a ser denominadas Unidades EMBRAPII.",
+            "question_type": "factual"
+            },
+            {
+            "question": "Qual é a finalidade do link que a instituição de pesquisa deve manter em destaque em seu website?",
+            "expected_answer": "O link deve levar à página específica da Unidade EMBRAPII.",
+            "question_type": "factual"
+            },
+            {
+            "question": "Qual dimensão mínima relativa da logomarca da Unidade é exigida para o link destacado no website da instituição?",
+            "expected_answer": "O link deve ser posicionado em tamanho, no mínimo, de 60% da logomarca da Unidade.",
+            "question_type": "factual"
+            },
+            {
+            "question": "Quais informações mínimas a página da Unidade EMBRAPII no website institucional deve descrever?",
+            "expected_answer": "Deve descrever o título, a área de competência, a descrição sumária do Plano de Ação, a estrutura de governança com nomes dos gestores e responsáveis e forma de contato, além da descrição sumária do modelo EMBRAPII e da forma de apoio financeiro.",
+            "question_type": "factual"
+            },
+            {
+            "question": "Como a logomarca da EMBRAPII deve aparecer quando utilizada pela Unidade?",
+            "expected_answer": "Deve sempre ser acompanhada do nome “Empresa Brasileira de Pesquisa e Inovação Industrial”.",
+            "question_type": "factual"
+            },
+            {
+            "question": "Quem decide sobre o descredenciamento por desempenho insuficiente da Unidade?",
+            "expected_answer": "A decisão cabe ao Conselho de Administração da EMBRAPII, com base em recomendação da Diretoria encaminhada pelo Diretor-Presidente.",
+            "question_type": "factual"
+            },
+            {
+            "question": "Quem aplica as demais penalidades previstas no manual, além do descredenciamento?",
+            "expected_answer": "As demais penalidades são aplicadas a partir de decisão da Diretoria da EMBRAPII.",
+            "question_type": "factual"
+            },
+            {
+            "question": "No glossário, como é definida a Conta Projeto?",
+            "expected_answer": "É a conta bancária destinada à realização das despesas individuais de cada projeto EMBRAPII, devendo cada projeto manter uma conta para cada fonte financeira distinta utilizada.",
+            "question_type": "factual"
+            },
+            {
+            "question": "Segundo o glossário, o que formaliza o credenciamento EMBRAPII?",
+            "expected_answer": "O credenciamento é formalizado por meio de um Termo de Cooperação firmado entre a EMBRAPII e a instituição de pesquisa científica e tecnológica selecionada.",
+            "question_type": "factual"
+            },
+            {
+            "question": "Como o glossário define “entrega” em um projeto EMBRAPII?",
+            "expected_answer": "Entrega é qualquer resultado mensurável, tangível e verificável, pertinente ao escopo do projeto EMBRAPII contratado por empresa.",
+            "question_type": "factual"
+            },
+            {
+            "question": "Qual documento, segundo o glossário, inicia a fase de negociação entre a Unidade e a empresa parceira?",
+            "expected_answer": "A Proposta Técnica inicia a fase de negociação.",
+            "question_type": "factual"
+            },
+            {
+            "question": "Que informação o termo de aceite de macroentrega exige sobre o responsável pelo projeto na empresa?",
+            "expected_answer": "Exige o nome e identificação do responsável pelo projeto na empresa, incluindo descrição do cargo, função e/ou informação equivalente que explicite sua autoridade para aceitar a macroentrega segundo o contrato.",
+            "question_type": "factual"
+            },
+            {
+            "question": "Para quais equipamentos se aplica a orientação geral do Anexo 3 sobre apuração e apropriação de custos diretos?",
+            "expected_answer": "Aplica-se a equipamentos cujo valor de aquisição tenha sido de até R$ 4 milhões.",
+            "question_type": "factual"
+            },
+            {
+            "question": "Quais são as três parcelas que compõem o custo direto de aplicação de um equipamento, segundo o Anexo 3?",
+            "expected_answer": "São os custos de verificação ou calibração do equipamento (Cvc), custo de manutenção do equipamento (Cm) e custo de utilização do equipamento (Cut).",
+            "question_type": "factual"
+            },
+            {
+            "question": "Para fins de cálculo do custo de utilização, qual vida útil deve ser considerada para equipamento ou software no Anexo 3?",
+            "expected_answer": "Deve ser considerada sempre uma vida útil de 10 anos.",
+            "question_type": "factual"
+            },
+            {
+            "question": "Quantas horas úteis anuais de utilização devem ser consideradas na apuração do custo-hora de aplicação de um equipamento?",
+            "expected_answer": "Devem ser consideradas 1200 horas úteis anuais de utilização.",
+            "question_type": "factual"
+            },
+            {
+            "question": "Como é calculado o custo de aplicação do equipamento em um projeto específico, segundo o Anexo 3?",
+            "expected_answer": "É calculado pelo produto do custo-hora (Ch) pela quantidade de horas de alocação efetiva do equipamento no projeto (Hproj).",
+            "question_type": "factual"
+            },
+            {
+            "question": "No caso de desktops e laptops, a que deve corresponder o número de horas por projeto usado na apuração do custo de aplicação?",
+            "expected_answer": "Deve corresponder à quantidade de horas de pessoal ao qual o equipamento esteja vinculado, conforme apontado no Anexo 8.",
+            "question_type": "factual"
+            },
+            {
+            "question": "Quais campos de receitas devem ser preenchidos no Anexo 4 - Demonstrativo de Receitas e Despesas?",
+            "expected_answer": "Devem ser preenchidos os campos valores recebidos, receita líquida de aplicações financeiras e devolução de recursos para as contas dos projetos.",
+            "question_type": "factual"
+            },
+            {
+            "question": "Quais são as fontes previstas nas orientações de preenchimento do Anexo 5 - Relação de Pagamentos?",
+            "expected_answer": "As fontes previstas são EMBRAPII, empresa(s) e Unidade EMBRAPII.",
+            "question_type": "factual"
+            },
+            {
+            "question": "Que observação o Anexo 6 traz sobre o formulário de conciliação bancária?",
+            "expected_answer": "Informa que o formulário deve ser preenchido para as contas do projeto.",
+            "question_type": "factual"
+            },
+            {
+            "question": "Qual item adicional aparece nas orientações do Anexo 7 para demonstrativo de contrapartida não financeira e não consta como item financiável geral do projeto?",
+            "expected_answer": "O item “despesas de infraestrutura”.",
+            "question_type": "factual"
+            },
+            {
+            "question": "O que a declaração do Anexo 11 afirma sobre o período de guarda da documentação comprobatória original?",
+            "expected_answer": "Afirma que toda a documentação comprobatória original será mantida e guardada por 10 anos, contados a partir da aprovação da prestação de contas final pela EMBRAPII.",
+            "question_type": "factual"
+            },
+            {
+            "question": "Como o Anexo 14 orienta a identificação das despesas com pessoal para fins de prestação de contas?",
+            "expected_answer": "Devem ser identificadas em duas categorias: equipe de pesquisa, desenvolvimento e inovação (PD&I) e equipe da Unidade EMBRAPII.",
+            "question_type": "factual"
+            },
+            {
+            "question": "Quais documentos comprobatórios são verificados para despesas com passagens e locomoção, segundo o Anexo 14?",
+            "expected_answer": "São verificados o e-ticket ou nota fiscal de agência de turismo e o relatório de viagem contendo beneficiário, período, objeto, local e resultados alcançados.",
+            "question_type": "factual"
+            },
+            {
+            "question": "Segundo o Anexo 14, como devem ser identificadas as despesas com serviços de terceiros pessoa física?",
+            "expected_answer": "Devem ser identificadas em três categorias: atividades de PD&I, serviços tecnológicos e outros serviços.",
+            "question_type": "factual"
+            },
+            {
+            "question": "Que documento comprobatório deve ser verificado para serviços de terceiros pessoa jurídica, conforme o Anexo 14?",
+            "expected_answer": "Deve ser verificada a nota fiscal com especificação do serviço executado.",
+            "question_type": "factual"
+            },
+            {
+            "question": "Quais recursos podem ser indicados no modelo de relatório de viagem do Anexo 16?",
+            "expected_answer": "Podem ser indicados os recursos Empresa, EMBRAPII e Unidade.",
+            "question_type": "factual"
+            },
+            {
+            "question": "Por que o manual oficializa, além dele próprio, a existência de Orientações Operacionais e Orientações de Parcerias Estratégicas como instrumentos complementares?",
+            "expected_answer": "Porque o modelo de operação precisa acomodar regras complementares, contextos específicos e atualizações normativas sem depender exclusivamente de revisões integrais do manual principal.",
+            "question_type": "inferential"
+            },
+            {
+            "question": "O que a mudança terminológica que deixa de diferenciar Polos e Unidades sugere sobre a evolução institucional da rede EMBRAPII?",
+            "expected_answer": "Sugere uma consolidação do modelo operacional e uma padronização da forma de tratamento das instituições credenciadas, com menor fragmentação normativa.",
+            "question_type": "inferential"
+            },
+            {
+            "question": "Qual a função estratégica de exigir visibilidade destacada da Unidade EMBRAPII no website da instituição vinculada?",
+            "expected_answer": "A exigência fortalece a transparência, a identidade pública da Unidade e a facilidade de acesso de empresas e demais interessados às informações sobre sua atuação credenciada.",
+            "question_type": "inferential"
+            },
+            {
+            "question": "Por que o manual detalha regras de uso da marca com tanto cuidado, inclusive sobre proporções e links?",
+            "expected_answer": "Porque a EMBRAPII busca padronização de identidade institucional, reconhecimento público do apoio concedido e coerência na comunicação da rede credenciada.",
+            "question_type": "inferential"
+            },
+            {
+            "question": "O que a previsão de bloqueio de conta como medida preventiva revela sobre a abordagem da EMBRAPII diante de problemas na execução dos projetos?",
+            "expected_answer": "Revela uma abordagem cautelar, que procura interromper riscos e preservar recursos antes mesmo da aplicação de penalidades mais graves.",
+            "question_type": "inferential"
+            },
+            {
+            "question": "Por que o manual prevê comunicação formal prévia sobre risco de descredenciamento antes da decisão final?",
+            "expected_answer": "Porque busca dar oportunidade de correção à Unidade, reduzir prejuízos aos projetos em andamento e assegurar maior previsibilidade e justiça no processo decisório.",
+            "question_type": "inferential"
+            },
+            {
+            "question": "Qual é a lógica de o glossário definir com precisão conceitos como macroentrega, plano de trabalho e conta projeto?",
+            "expected_answer": "A lógica é padronizar a interpretação operacional do modelo, reduzir ambiguidades e garantir uniformidade na execução, no acompanhamento e na prestação de contas das Unidades.",
+            "question_type": "inferential"
+            },
+            {
+            "question": "Por que o glossário enfatiza que as macroentregas devem ser sucessivas e precedidas por aceite da empresa?",
+            "expected_answer": "Porque isso reforça a ideia de validação progressiva do desenvolvimento tecnológico, distribuindo risco e dando maior controle sobre continuidade, avanço técnico e desembolso.",
+            "question_type": "inferential"
+            },
+            {
+            "question": "O que o tratamento específico previsto para equipamentos acima de R$ 4 milhões sugere sobre a gestão de contrapartidas e custos pela EMBRAPII?",
+            "expected_answer": "Sugere que equipamentos de valor muito elevado exigem análise individualizada para evitar distorções, simplificações inadequadas e apropriações incompatíveis com a realidade do projeto.",
+            "question_type": "inferential"
+            },
+            {
+            "question": "Por que o Anexo 3 usa uma base anual padronizada de 1200 horas para o cálculo do custo-hora de equipamentos?",
+            "expected_answer": "Essa padronização busca criar critério uniforme e comparável para apropriação de custos, facilitando controle, verificação e consistência entre projetos e Unidades.",
+            "question_type": "inferential"
+            },
+            {
+            "question": "Qual a intenção de exigir processo e registros próprios da Unidade para demonstrar as horas de uso de equipamentos em projetos?",
+            "expected_answer": "A intenção é assegurar rastreabilidade, auditabilidade e comprovação objetiva de que a contrapartida lançada corresponde a uso efetivo e mensurável.",
+            "question_type": "inferential"
+            },
+            {
+            "question": "Por que, no caso de desktops e laptops, o Anexo 3 vincula o uso do equipamento às horas de pessoal apontadas no projeto?",
+            "expected_answer": "Porque esses equipamentos são tipicamente utilizados de forma inseparável do trabalho dos profissionais alocados, tornando as horas de pessoal um critério prático e coerente para apropriação do uso.",
+            "question_type": "inferential"
+            },
+            {
+            "question": "O que a exigência de identificação das despesas por fonte de recurso nos anexos de prestação de contas revela sobre o modelo financeiro da EMBRAPII?",
+            "expected_answer": "Revela forte preocupação com segregação contábil, rastreabilidade dos aportes e verificação de conformidade segundo a origem de cada recurso.",
+            "question_type": "inferential"
+            },
+            {
+            "question": "Por que os anexos de prestação de contas distinguem detalhadamente categorias como equipe de PD&I e equipe da Unidade EMBRAPII?",
+            "expected_answer": "Porque o manual reconhece que diferentes funções participam da operação credenciada e que sua apropriação financeira precisa ser demonstrável e compatível com a natureza de cada atividade.",
+            "question_type": "inferential"
+            },
+            {
+            "question": "Qual o efeito de exigir relatório de viagem com justificativa técnica e resultados alcançados para despesas de diárias e passagens?",
+            "expected_answer": "Essa exigência evita gastos sem conexão comprovada com o projeto ou com a atuação da Unidade, além de reforçar a responsabilização pelo uso dos recursos.",
+            "question_type": "inferential"
+            },
+            {
+            "question": "Por que o manual exige documento fiscal ou recibo com especificação do serviço executado para serviços de terceiros?",
+            "expected_answer": "Porque a especificação do serviço é necessária para comprovar aderência da despesa ao escopo permitido e permitir análise técnica e financeira da sua legitimidade.",
+            "question_type": "inferential"
+            },
+            {
+            "question": "O que o modelo de declaração do Anexo 11 demonstra sobre o padrão de responsabilização adotado pela EMBRAPII na prestação de contas?",
+            "expected_answer": "Demonstra um padrão que combina conformidade legal, responsabilidade do representante institucional e validação contábil formal dos registros e pagamentos realizados.",
+            "question_type": "inferential"
+            }
+            ]
+            
