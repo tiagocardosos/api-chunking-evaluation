@@ -199,18 +199,28 @@ def save_all(
         _save_table(pv_table, out / f"pvalues_{label}", title=f"P-values — {_METRIC_LABELS.get(metric, metric)}")
 
     # 3. Ranking
-    rank = ranking_table(comparisons, alpha=alpha)
-    _save_table(rank, out / "ranking", title="Ranking — Vitórias Significativas por Estratégia")
+    if comparisons:
+        rank = ranking_table(comparisons, alpha=alpha)
+        _save_table(rank, out / "ranking", title="Ranking — Vitórias Significativas por Estratégia")
+    else:
+        print("[SKIP] Ranking: nenhuma comparação disponível (min_pairs não atingido).")
 
     # 4. Comparações brutas
-    comp_df = _comparisons_to_df(comparisons)
-    comp_df.to_csv(out / "all_comparisons.csv", index=False)
-    print(f"[OK] Comparações brutas: {out / 'all_comparisons.csv'}")
+    if comparisons:
+        comp_df = _comparisons_to_df(comparisons)
+        comp_df.to_csv(out / "all_comparisons.csv", index=False)
+        print(f"[OK] Comparações brutas: {out / 'all_comparisons.csv'}")
+    else:
+        print("[SKIP] all_comparisons.csv: nenhuma comparação disponível.")
 
     print(f"\n[OK] Todas as tabelas salvas em: {out.resolve()}")
 
 
 def _save_table(df: pd.DataFrame, base_path: Path, title: str) -> None:
+    if df.empty:
+        print(f"[SKIP] {title}: tabela vazia.")
+        return
+
     # CSV
     df.to_csv(f"{base_path}.csv")
 

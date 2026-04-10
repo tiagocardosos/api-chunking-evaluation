@@ -41,8 +41,8 @@ def main() -> None:
     )
     parser.add_argument(
         "--output-dir",
-        default="outputs",
-        help="Diretório de saída para as tabelas (default: outputs/).",
+        default=str(Path(__file__).parent / "outputs"),
+        help="Diretório de saída para as tabelas (default: evaluation/outputs/).",
     )
     parser.add_argument(
         "--doc-type",
