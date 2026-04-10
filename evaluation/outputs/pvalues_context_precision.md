@@ -1,0 +1,8 @@
+## P-values — Context Precision
+
+|            | Fixed-Size   | Recursive   | Semantic   | Sentence   |
+|:-----------|:-------------|:------------|:-----------|:-----------|
+| Fixed-Size | —            | 0.6127      | 0.6849     | 0.7440     |
+| Recursive  | 0.6127       | —           | 0.5085     | 0.0653     |
+| Semantic   | 0.6849       | 0.5085      | —          | 0.9909     |
+| Sentence   | 0.7440       | 0.0653      | 0.9909     | —          |

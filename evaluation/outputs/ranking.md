@@ -1,0 +1,8 @@
+## Ranking — Vitórias Significativas por Estratégia
+
+|            |   Answer Correctness |   Answer Relevancy |   Context Precision |   Context Recall |   Faithfulness |   MRR |   Total Vitórias |
+|:-----------|---------------------:|-------------------:|--------------------:|-----------------:|---------------:|------:|-----------------:|
+| Sentence   |                    1 |                  0 |                   0 |                1 |              0 |     0 |                2 |
+| Recursive  |                    0 |                  0 |                   0 |                0 |              1 |     0 |                1 |
+| Fixed-Size |                    0 |                  0 |                   0 |                0 |              0 |     0 |                0 |
+| Semantic   |                    0 |                  0 |                   0 |                0 |              0 |     0 |                0 |

@@ -1,0 +1,5 @@
+,Fixed-Size,Recursive,Semantic,Sentence
+Fixed-Size,—,0.7764,1.0000,1.0000
+Recursive,0.7764,—,1.0000,1.0000
+Semantic,1.0000,1.0000,—,0.5722
+Sentence,1.0000,1.0000,0.5722,—
