@@ -1,4 +1,4 @@
-# Avaliação Comparativa de Estratégias de Chunking para Currículos Lattes: um Framework Baseado em RAG e LLMs para Busca Semântica e Matchmaking Projeto–Pesquisador
+# Avaliação Comparativa de Estratégias de Chunking em Documentos Institucionais Brasileiros: um Framework Baseado em RAG e LLMs
 
 **Disciplina:** Inteligência Artificial Generativa
 **Professor:** Marcelo Rodrigo de Souza Pita
@@ -16,19 +16,19 @@ A Retrieval-Augmented Generation (RAG) consolidou-se como a arquitetura de refer
 
 Nesse contexto, a etapa de chunking — a forma como o documento é dividido em fragmentos — desempenha papel central na qualidade do sistema. Chunks muito grandes diluem a informação relevante em meio a conteúdo irrelevante; chunks muito pequenos perdem contexto essencial para a compreensão. A escolha da estratégia de segmentação impacta diretamente a precisão da recuperação, a fidelidade da resposta gerada e, em última instância, a utilidade do sistema para o usuário final.
 
-A administração pública brasileira produz e consome grandes volumes de documentos institucionais, como editais de fomento (EMBRAPII, FINEP, CNPq) e currículos acadêmicos na Plataforma Lattes. Esses documentos possuem estruturas heterogêneas: enquanto editais em PDF seguem prosa não-estruturada, os currículos Lattes são disponibilizados em formatos semi-estruturados (XML e JSON) com seções hierarquicamente definidas — artigos publicados, orientações concluídas, patentes registradas, formação acadêmica, entre outras. A aplicação de LLMs via RAG sobre esse corpus oferece oportunidades concretas para automação de processos de matchmaking entre projetos de fomento e pesquisadores, análise automatizada de produção científica e busca semântica inteligente em bases documentais extensas.
+A administração pública brasileira produz e consome grandes volumes de documentos institucionais, como manuais de operação, códigos de conduta ética, regimentos internos e editais de fomento (EMBRAPII, FINEP, CNPq). Esses documentos possuem estruturas heterogêneas — prosa normativa em PDF, seções hierárquicas, tabelas e anexos técnicos — o que torna a segmentação uma decisão de engenharia com impacto direto na qualidade da recuperação. A aplicação de LLMs via RAG sobre esse corpus oferece oportunidades concretas para busca semântica inteligente em bases documentais extensas, automação de consultas sobre normas institucionais e apoio à tomada de decisão. Complementarmente, documentos semi-estruturados como currículos Lattes (XML/JSON) oferecem uma oportunidade adicional para avaliar estratégias structure-aware que exploram a organização intrínseca do formato original.
 
 ### 1.2 Motivação
 
-Apesar da crescente adoção de sistemas RAG, a literatura ainda carece de avaliações sistemáticas e estatisticamente rigorosas sobre o impacto das estratégias de chunking na qualidade de sistemas de perguntas e respostas, especialmente quando aplicadas a documentos institucionais brasileiros em português. A maioria dos estudos adota abordagens genéricas (fixed-size ou recursive splitting) sem considerar a estrutura intrínseca dos documentos alvo.
+Apesar da crescente adoção de sistemas RAG, a literatura ainda carece de avaliações sistemáticas e estatisticamente rigorosas sobre o impacto das estratégias de chunking na qualidade de sistemas de perguntas e respostas, especialmente quando aplicadas a documentos institucionais brasileiros em português. A maioria dos estudos adota abordagens genéricas (fixed-size ou recursive splitting) sem considerar a estrutura intrínseca dos documentos alvo nem avaliar o efeito do chunking como variável independente isolada.
 
-No caso específico de currículos Lattes, a estrutura semi-estruturada em XML/JSON oferece uma oportunidade única: é possível projetar estratégias de chunking que respeitem a organização semântica do currículo — tratando cada produção científica, orientação ou patente como uma unidade atômica de informação. A hipótese é que essa abordagem structure-aware supere estratégias genéricas em tarefas de busca e geração sobre dados Lattes, preservando a integridade semântica de cada registro do pesquisador.
+O foco deste trabalho é a **comparação direta entre cinco estratégias de chunking** — desde abordagens ingênuas (fixed-size) até abordagens semanticamente informadas (semantic chunking) e estruturalmente informadas (structure-aware) — aplicadas a um corpus de documentos normativos da EMBRAPII em PDF. Como complemento, currículos Lattes em XML/JSON são utilizados para avaliar a estratégia structure-aware, que explora a organização semântica intrínseca do formato semi-estruturado — tratando cada produção científica, orientação ou patente como uma unidade atômica de informação.
 
-Adicionalmente, do ponto de vista da administração pública, a capacidade de localizar pesquisadores cujo perfil de produção científica esteja alinhado a editais de fomento — de forma automática, precisa e auditável — representa um avanço significativo em relação aos processos manuais de análise curricular atualmente praticados por agências de fomento e comitês de avaliação.
+A pergunta central é: **qual estratégia de chunking oferece melhor qualidade de recuperação e geração para documentos institucionais brasileiros?** A resposta a essa pergunta tem implicações práticas diretas para qualquer organização que deseje implantar RAG sobre sua base documental.
 
 ### 1.3 Objetivo
 
-O objetivo deste trabalho é projetar, implementar e avaliar experimentalmente um framework baseado em RAG e LLMs que compare cinco estratégias de chunking aplicadas a documentos institucionais brasileiros — editais EMBRAPII em PDF e currículos Lattes em XML/JSON — respondendo à seguinte pergunta de pesquisa:
+O objetivo deste trabalho é projetar, implementar e avaliar experimentalmente um framework baseado em RAG e LLMs que compare cinco estratégias de chunking aplicadas a documentos institucionais brasileiros, respondendo à seguinte pergunta de pesquisa:
 
 > **Como diferentes estratégias de chunking afetam a qualidade de recuperação e geração em documentos institucionais brasileiros?**
 
@@ -37,7 +37,7 @@ Especificamente, o trabalho busca:
 1. Implementar cinco estratégias de chunking com graus variados de granularidade e aproveitamento da estrutura do documento.
 2. Construir um pipeline RAG completo (ingestão, indexação vetorial, recuperação semântica e geração) parametrizável por estratégia de chunking.
 3. Avaliar as estratégias de forma pareada, utilizando métricas do framework RAGAS e MRR, com análise estatística por teste de Wilcoxon signed-rank e correção de Holm-Bonferroni para comparações múltiplas.
-4. Identificar qual estratégia oferece o melhor equilíbrio entre precisão de recuperação e qualidade de geração, com atenção especial ao comportamento em documentos semi-estruturados (Lattes).
+4. Identificar qual estratégia oferece o melhor equilíbrio entre precisão de recuperação e qualidade de geração para documentos normativos em PDF, e avaliar complementarmente o comportamento do structure-aware em documentos semi-estruturados (Lattes).
 
 ---
 
@@ -71,10 +71,10 @@ Diversos trabalhos investigam o impacto do chunking em sistemas RAG, porém a ma
 
 - **LangChain e LlamaIndex** oferecem implementações de splitting recursivo e por sentença como padrões de mercado, mas sem avaliação comparativa formal entre estratégias.
 - **Estudos recentes de RAG evaluation** (e.g., benchmarks RAGAS, ARES, RECALL) propõem métricas automatizadas para avaliar pipelines, mas raramente controlam o chunking como variável independente isolada.
-- **Aplicações de NLP em documentos brasileiros** concentram-se em classificação de texto ou sumarização, sendo escassas as avaliações de RAG sobre corpus institucional brasileiro (Lattes, editais de fomento).
-- **Plataforma Lattes e mineração de dados:** trabalhos anteriores exploram a Plataforma Lattes para análise bibliométrica e formação de redes de colaboração, mas não a integram com pipelines de RAG para busca semântica.
+- **Aplicações de NLP em documentos brasileiros** concentram-se em classificação de texto ou sumarização, sendo escassas as avaliações de RAG sobre corpus institucional brasileiro (manuais normativos, editais de fomento).
+- **Plataforma Lattes e mineração de dados:** trabalhos anteriores exploram a Plataforma Lattes para análise bibliométrica e formação de redes de colaboração, mas não a integram com pipelines de RAG — o que motiva sua inclusão como corpus complementar para avaliação do structure-aware chunking.
 
-O diferencial deste trabalho reside na combinação de: (i) cinco estratégias de chunking implementadas sobre o mesmo framework, (ii) corpus institucional brasileiro heterogêneo (PDF + XML/JSON), (iii) avaliação estatística pareada com controle rigoroso de variáveis e (iv) estratégia structure-aware específica para a estrutura do Currículo Lattes.
+O diferencial deste trabalho reside na combinação de: (i) cinco estratégias de chunking implementadas sobre o mesmo framework, (ii) corpus de documentos normativos brasileiros com golden set de 231 perguntas tipadas, (iii) avaliação estatística pareada com controle rigoroso de variáveis e (iv) estratégia structure-aware complementar para documentos semi-estruturados (Lattes).
 
 ---
 
@@ -82,20 +82,20 @@ O diferencial deste trabalho reside na combinação de: (i) cinco estratégias d
 
 ### 3.1 Problema da Administração Pública
 
-Agências brasileiras de fomento à pesquisa — como EMBRAPII, CNPq, FINEP e CAPES — frequentemente precisam identificar pesquisadores cujo perfil acadêmico e de produção científica esteja alinhado a editais, projetos ou linhas temáticas específicas. Esse processo de matchmaking projeto–pesquisador atualmente é predominantemente manual: comitês de avaliação analisam centenas de currículos Lattes para identificar candidatos elegíveis, verificando publicações em áreas relevantes, orientações concluídas, patentes registradas e experiência em projetos anteriores.
+Agências brasileiras de fomento à pesquisa — como EMBRAPII, CNPq, FINEP e CAPES — produzem e mantêm grandes volumes de documentos normativos: manuais de operação, códigos de conduta ética, regimentos internos, editais e orientações operacionais. Colaboradores, unidades credenciadas e pesquisadores frequentemente precisam consultar esses documentos para esclarecer dúvidas sobre procedimentos, requisitos, obrigações e penalidades. Esse processo de consulta é predominantemente manual e ineficiente, exigindo leitura extensiva de documentos longos e complexos.
 
-Paralelamente, pesquisadores enfrentam dificuldade para localizar editais cujos requisitos coincidam com seu perfil de atuação. A assimetria de informação entre agências de fomento e pesquisadores resulta em subutilização de recursos, baixa taxa de aplicação em editais pertinentes e processos seletivos cujo escopo de candidatos não reflete o universo real de pesquisadores qualificados.
+A aplicação de sistemas RAG sobre esse corpus normativo oferece a possibilidade de busca semântica inteligente — permitindo que usuários façam perguntas em linguagem natural e obtenham respostas fundamentadas nos documentos originais. No entanto, a qualidade das respostas depende criticamente de como os documentos são segmentados em chunks para indexação vetorial. A escolha da estratégia de chunking é uma decisão de engenharia com impacto direto na precisão da recuperação e na fidelidade da geração.
 
-O volume de dados envolvido é substancial: a Plataforma Lattes possui mais de 7 milhões de currículos cadastrados, e agências como a EMBRAPII publicam dezenas de editais por ano, cada um com critérios específicos de elegibilidade, áreas temáticas e requisitos de experiência.
+Complementarmente, documentos semi-estruturados como currículos Lattes (XML/JSON) oferecem uma oportunidade para avaliar estratégias structure-aware que exploram a organização intrínseca do formato — potencialmente aplicáveis a cenários de matchmaking projeto–pesquisador em agências de fomento.
 
 ### 3.2 Partes Interessadas
 
 | Parte Interessada | Interesse no Sistema |
 |---|---|
-| **Agências de fomento** (EMBRAPII, CNPq, FINEP) | Identificação automatizada de pesquisadores elegíveis para editais; redução do tempo de triagem de currículos |
-| **Pesquisadores e grupos de pesquisa** | Busca semântica em editais compatíveis com seu perfil; respostas contextualizadas sobre requisitos de elegibilidade |
-| **Comitês de avaliação** | Pré-triagem automatizada de candidatos; análise comparativa de perfis acadêmicos |
-| **Gestores de CT&I** | Visão panorâmica da capacidade instalada (pesquisadores × áreas) para planejamento estratégico de fomento |
+| **Agências de fomento** (EMBRAPII, CNPq, FINEP) | Busca semântica inteligente em documentos normativos; respostas contextualizadas sobre regras, procedimentos e requisitos |
+| **Unidades credenciadas e parceiros** | Consulta rápida sobre obrigações, prestação de contas, prazos e penalidades em manuais de operação |
+| **Equipes de compliance e ética** | Acesso ágil a normas de conduta, regimentos e procedimentos de apuração |
+| **Gestores de CT&I** | Automatização de consultas sobre normas operacionais e apoio à tomada de decisão |
 | **Comunidade acadêmica de IA** | Benchmark aberto para avaliação de estratégias de chunking em RAG sobre documentos institucionais brasileiros |
 
 ### 3.3 Critérios de Sucesso
@@ -103,8 +103,9 @@ O volume de dados envolvido é substancial: a Plataforma Lattes possui mais de 7
 O projeto define critérios de sucesso mensuráveis e estatisticamente verificáveis:
 
 1. **Diferença estatisticamente significativa:** ao menos um par de estratégias de chunking deve apresentar diferença significativa (p < 0,05 após correção de Holm-Bonferroni) em pelo menos uma métrica de avaliação, demonstrando que a escolha do chunking não é trivial.
-2. **Superioridade do structure-aware em dados Lattes:** a estratégia structure-aware deve vencer ao menos uma estratégia genérica em corpus de currículos Lattes, validando a hipótese de que o aproveitamento da estrutura do documento melhora a qualidade do RAG.
-3. **Reprodutibilidade:** todos os experimentos devem ser reproduzíveis com seed fixo (temperature=0, seed=42), mesmas versões de modelo e infraestrutura conteinerizada.
+2. **Ranking de estratégias:** o experimento deve produzir um ranking fundamentado de estratégias por número de vitórias significativas, orientando a escolha de chunking para documentos normativos em português.
+3. **Complementaridade do structure-aware:** a estratégia structure-aware deve ser avaliada em corpus semi-estruturado (Lattes), validando a hipótese de que o aproveitamento da estrutura do documento melhora a qualidade do RAG para esse tipo de dado.
+4. **Reprodutibilidade:** todos os experimentos devem ser reproduzíveis com seed fixo (temperature=0, seed=42), mesmas versões de modelo e infraestrutura conteinerizada.
 
 ---
 
@@ -193,7 +194,7 @@ A arquitetura do sistema segue o paradigma clássico de RAG com adaptações par
 
 O pipeline do framework é composto por quatro estágios principais:
 
-**Estágio 1 — Ingestão de Documentos.** Documentos são carregados por loaders especializados: PyMuPDF para PDFs, lxml para XMLs Lattes e parser JSON para currículos em formato JSON (conversão xmltodict). O texto extraído é então processado pela estratégia de chunking selecionada.
+**Estágio 1 — Ingestão de Documentos.** Documentos são carregados por loaders especializados: PyMuPDF para PDFs (documentos normativos EMBRAPII), lxml para XMLs Lattes e parser JSON para currículos em formato JSON (conversão xmltodict). O texto extraído é então processado pela estratégia de chunking selecionada.
 
 **Estágio 2 — Indexação Vetorial.** Cada chunk gerado é convertido em um vetor de 1536 dimensões pelo modelo text-embedding-3-small e armazenado no Qdrant. Simultaneamente, os metadados textuais (conteúdo, índice, estratégia, offsets) são persistidos no PostgreSQL para auditoria e análise posterior. O design impõe uma coleção por estratégia, isolando completamente o impacto de cada abordagem no índice vetorial.
 
@@ -209,15 +210,16 @@ O pipeline do framework é composto por quatro estágios principais:
 | **Recursive** | Hierarquia de separadores adaptada para português (parágrafos → linhas → sentenças → palavras) via LangChain | Abordagem padrão de mercado |
 | **Sentence** | Segmentação por sentenças com proteção de abreviações em português (Dr., Prof., Art.) e overlap em nível de sentença | Respeito a fronteiras linguísticas |
 | **Semantic** | Embeddings por sentença com detecção de quebras temáticas por queda de similaridade cosseno (percentil 25) | Fronteiras temáticas baseadas em semântica |
-| **Structure-Aware** | Um chunk por unidade de produção científica (artigo, patente, orientação) via parsing de XML/JSON Lattes | Aproveitamento da estrutura do Currículo Lattes |
+| **Structure-Aware** | Um chunk por unidade de produção científica (artigo, patente, orientação) via parsing de XML/JSON Lattes | Complemento: aproveitamento da estrutura semi-estruturada do Currículo Lattes |
 
 ### 4.3 Principais Contribuições
 
 1. **Framework open-source parametrizável** para avaliação comparativa de estratégias de chunking em RAG, conteinerizado com Docker Compose e reproduzível via API REST.
-2. **Estratégia Structure-Aware para Currículos Lattes**, que trata cada produção científica como unidade atômica de chunking — contribuição específica para o domínio de documentos acadêmicos brasileiros.
+2. **Comparação sistemática de cinco estratégias de chunking** (Fixed-Size, Recursive, Sentence, Semantic e Structure-Aware) sobre documentos normativos brasileiros, com controle rigoroso de variáveis.
 3. **Adaptações para português** nas estratégias Recursive (hierarquia de separadores customizada) e Sentence (proteção de abreviações em pt-BR).
 4. **Pipeline de avaliação estatística** com teste de Wilcoxon signed-rank pareado, correção de Holm-Bonferroni e reporte de tamanho de efeito (rank-biserial), indo além de simples comparações de médias.
-5. **Golden set bilíngue e tipado**, com distinção entre perguntas factuais e inferenciais sobre dois tipos de documentos (editais PDF e currículos Lattes), permitindo análises estratificadas.
+5. **Golden set tipado com 231 perguntas**, com distinção entre perguntas factuais (139) e inferenciais (92) sobre três documentos normativos EMBRAPII, permitindo análises estratificadas por tipo de pergunta.
+6. **Estratégia Structure-Aware para Currículos Lattes** como complemento, demonstrando o potencial de chunking estruturalmente informado em documentos semi-estruturados (XML/JSON).
 
 ### 4.4 Riscos e Limitações
 
@@ -227,8 +229,8 @@ O pipeline do framework é composto por quatro estágios principais:
 | **Custo do SemanticChunker** | Requer chamadas de embedding na ingestão (além do retrieval), gerando ~20.000 embeddings extras para 100 documentos |
 | **MRR por heurística** | Sem anotações chunk-level, o MRR usa correspondência de janela de 5 tokens; pode subestimar relevância de chunks parafraseados |
 | **Hybrid search incompleto** | A busca híbrida (BM25 + densa) está implementada como stub; atualmente funciona como fallback para busca semântica pura |
-| **Golden set parcialmente anotado** | Perguntas sem expected_answer contribuem apenas para 3 das 5 métricas RAGAS (Faithfulness, Answer Relevancy, Context Precision) |
-| **Especificidade do Structure-Aware** | Aplicável apenas a documentos Lattes em XML/JSON; para outros formatos, recorre a fallback recursivo |
+| **Tamanho do golden set** | 231 perguntas com expected_answer distribuídas em 3 documentos; possível viés na distribuição (65% concentradas no Manual de Operação) |
+| **Especificidade do Structure-Aware** | Aplicável apenas a documentos semi-estruturados (Lattes em XML/JSON); avaliação complementar ao corpus principal de documentos normativos em PDF |
 
 ---
 
@@ -236,10 +238,25 @@ O pipeline do framework é composto por quatro estágios principais:
 
 ### 5.1 Setup Experimental
 
-**Dados:**
-- Editais EMBRAPII em PDF (documentos institucionais de fomento à pesquisa)
-- Currículos Lattes em JSON/XML (produção científica de pesquisadores)
-- Golden set com perguntas factuais (fatos explícitos, critérios, requisitos) e inferenciais (síntese, interpretação, comparação)
+**Corpus de Documentos (PDF):**
+- Manual de Operação EMBRAPII v6 (20/10/2020) — 150 páginas, regras operacionais de credenciamento, projetos e prestação de contas
+- Código de Conduta Ética da EMBRAPII (agosto/2019) — 35 páginas, normas de conduta para colaboradores e parceiros
+- Regimento do Comitê de Conduta Ética — 46 páginas, composição, atribuições e procedimentos de apuração
+
+**Corpus Complementar (JSON/XML):**
+- Currículos Lattes — utilizados exclusivamente para avaliação da estratégia Structure-Aware
+
+**Golden Set — 231 perguntas com respostas esperadas:**
+
+| Dataset | Total | Factual | Inferential | Com Resposta |
+|:---|:---:|:---:|:---:|:---:|
+| Regimento Comitê de Conduta Ética | 46 | 30 (65%) | 16 (35%) | 46 |
+| Código de Ética (ago/2019) | 35 | 16 (46%) | 19 (54%) | 35 |
+| Manual de Operação EMBRAPII v6 | 150 | 93 (62%) | 57 (38%) | 150 |
+| **Total** | **231** | **139 (60%)** | **92 (40%)** | **231** |
+
+- **Perguntas factuais** (60%): buscam fatos explícitos, critérios, requisitos, prazos e definições presentes no texto original.
+- **Perguntas inferenciais** (40%): exigem síntese, interpretação, comparação ou dedução a partir de múltiplos trechos do documento.
 
 **Modelos:**
 - Embedding: text-embedding-3-small (OpenAI, 1536 dimensões)
@@ -315,11 +332,13 @@ Os resultados demonstram que:
 
 1. **A escolha do chunking não é trivial** — existem diferenças estatisticamente significativas entre estratégias, confirmando que essa decisão de engenharia impacta a qualidade do sistema RAG.
 
-2. **Estratégias linguisticamente informadas (Sentence) superam abordagens genéricas** — particularmente em Answer Correctness e Context Recall, métricas diretamente ligadas à utilidade para o usuário final.
+2. **Estratégias linguisticamente informadas (Sentence) superam abordagens genéricas** — particularmente em Answer Correctness e Context Recall, métricas diretamente ligadas à utilidade para o usuário final em consultas a documentos normativos.
 
-3. **O framework pode ser aplicado a cenários reais de matchmaking** — ao indexar currículos Lattes com a estratégia adequada e editais de fomento com estratégias genéricas otimizadas, agências de fomento podem automatizar a pré-triagem de candidatos com respostas fundamentadas e auditáveis.
+3. **O framework é diretamente aplicável a cenários reais** — agências de fomento podem implantar RAG sobre seus manuais, códigos de conduta e regimentos utilizando a estratégia de chunking mais adequada, oferecendo busca semântica inteligente para colaboradores e parceiros.
 
-4. **Auditabilidade completa** — cada resposta gerada é rastreável aos chunks recuperados, permitindo que avaliadores humanos verifiquem a fundamentação das recomendações do sistema.
+4. **Auditabilidade completa** — cada resposta gerada é rastreável aos chunks recuperados, permitindo que avaliadores humanos verifiquem a fundamentação das respostas do sistema.
+
+5. **Complementaridade do Structure-Aware** — para documentos semi-estruturados (como Lattes), a estratégia structure-aware oferece potencial adicional ao explorar a organização intrínseca do formato, abrindo caminho para cenários de matchmaking projeto–pesquisador.
 
 ---
 
@@ -329,38 +348,39 @@ Os resultados demonstram que:
 
 Este trabalho apresentou um framework open-source para avaliação comparativa de estratégias de chunking em sistemas RAG aplicados a documentos institucionais brasileiros. As principais entregas incluem:
 
-- Implementação de cinco estratégias de chunking (Fixed-Size, Recursive, Sentence, Semantic e Structure-Aware) em um pipeline RAG completo e conteinerizado.
+- Comparação sistemática de cinco estratégias de chunking (Fixed-Size, Recursive, Sentence, Semantic e Structure-Aware) em um pipeline RAG completo e conteinerizado.
+- Golden set com 231 perguntas (139 factuais + 92 inferenciais) sobre três documentos normativos EMBRAPII, todas com respostas esperadas.
 - Adaptações específicas para português: separadores customizados no Recursive e proteção de abreviações pt-BR no Sentence.
-- Estratégia Structure-Aware original para currículos Lattes, mapeando cada produção científica como unidade atômica de chunking.
+- Estratégia Structure-Aware complementar para currículos Lattes, mapeando cada produção científica como unidade atômica de chunking.
 - Pipeline de análise estatística com Wilcoxon signed-rank pareado, correção de Holm-Bonferroni e tamanho de efeito rank-biserial.
 - API REST documentada (FastAPI + Swagger) para reprodução e extensão dos experimentos.
 
 ### 6.2 Discussão e Interpretação Crítica dos Resultados
 
-Os resultados indicam que a estratégia **Sentence** oferece o melhor desempenho global entre as quatro estratégias avaliadas, com vitórias significativas em Context Recall e Answer Correctness. Essa superioridade pode ser atribuída à preservação de fronteiras de sentença, que mantém unidades semânticas completas nos chunks e facilita tanto a recuperação precisa quanto a geração de respostas corretas.
+Os resultados da comparação entre as quatro estratégias aplicadas ao corpus de documentos normativos EMBRAPII indicam que a estratégia **Sentence** oferece o melhor desempenho global, com vitórias significativas em Context Recall e Answer Correctness. Essa superioridade pode ser atribuída à preservação de fronteiras de sentença, que mantém unidades semânticas completas nos chunks e facilita tanto a recuperação precisa quanto a geração de respostas corretas.
 
 A estratégia **Recursive** demonstrou superioridade em Faithfulness sobre o baseline Fixed-Size, reforçando que a hierarquia de separadores reduz a fragmentação de contexto que prejudica a fidelidade das respostas.
 
 A concentração de medianas em valores altos (Faithfulness e Context Recall frequentemente em 1,000) sugere um efeito de teto: o pipeline RAG com GPT-4o-mini já atinge desempenho elevado nessas métricas, tornando mais difícil a diferenciação entre estratégias. As diferenças significativas emergem justamente nas métricas com maior dispersão (Answer Correctness, com medianas entre 0,609 e 0,679), onde o impacto do chunking é mais perceptível.
 
-É importante ressaltar que a ausência de vitórias significativas para uma estratégia não implica inferioridade prática — pode indicar que as diferenças são reais, mas insuficientes para significância estatística após a conservadora correção de Holm-Bonferroni.
+É importante ressaltar que a ausência de vitórias significativas para uma estratégia não implica inferioridade prática — pode indicar que as diferenças são reais, mas insuficientes para significância estatística após a conservadora correção de Holm-Bonferroni. A análise estratificada por tipo de pergunta (factual vs. inferencial) poderá revelar padrões adicionais, dado que o golden set contém 139 perguntas factuais e 92 inferenciais distribuídas entre os três documentos.
 
 ### 6.3 Limitações
 
-1. **Estratégia Structure-Aware não incluída nos resultados atuais** — os experimentos reportados avaliam quatro estratégias genéricas; a validação da hipótese de superioridade do Structure-Aware em dados Lattes permanece como trabalho futuro.
+1. **Estratégia Structure-Aware avaliada separadamente** — por ser aplicável apenas a documentos semi-estruturados (Lattes em XML/JSON), os resultados do Structure-Aware são complementares e não diretamente comparáveis com as quatro estratégias genéricas aplicadas ao corpus PDF.
 2. **MRR limitado por heurística** — a ausência de anotações de relevância chunk-level obriga o uso de matching por janela de tokens, subestimando chunks relevantes que expressam a resposta de forma parafraseada.
 3. **Dependência de APIs comerciais** — embeddings e geração via OpenAI introduzem custo, latência e risco de mudanças na API.
 4. **Busca híbrida como stub** — a recuperação BM25 + vetor denso está implementada como fallback para semântica pura.
-5. **Ausência de filtragem por tipo de documento e tipo de pergunta nos resultados** — limitação técnica no join com o golden set impede análises estratificadas PDF vs. Lattes nesta versão.
+5. **Análises estratificadas por tipo de pergunta** — embora o golden set diferencie perguntas factuais e inferenciais, a análise estratificada por tipo de pergunta será explorada em trabalhos futuros.
 
 ### 6.4 Próximos Passos
 
-1. **Avaliação completa do Structure-Aware** em corpus exclusivo de currículos Lattes, testando a hipótese de que chunks alinhados à estrutura do CV superam estratégias genéricas em perguntas sobre produção científica.
-2. **Implementação de busca híbrida** (BM25 sparse + vetor denso) para avaliar o impacto da combinação de retrieval lexical e semântico.
-3. **Expansão do golden set** com anotações de relevância chunk-level para cálculo de MRR e Recall@k sem heurísticas.
-4. **Análises estratificadas** por tipo de documento (PDF vs. Lattes) e tipo de pergunta (factual vs. inferencial).
+1. **Análises estratificadas** por tipo de pergunta (factual vs. inferencial) e por documento, explorando o golden set de 231 perguntas em profundidade.
+2. **Avaliação completa do Structure-Aware** em corpus de currículos Lattes, testando a hipótese de que chunks alinhados à estrutura do CV superam estratégias genéricas em perguntas sobre produção científica.
+3. **Implementação de busca híbrida** (BM25 sparse + vetor denso) para avaliar o impacto da combinação de retrieval lexical e semântico.
+4. **Expansão do golden set** com anotações de relevância chunk-level para cálculo de MRR e Recall@k sem heurísticas.
 5. **Integração com modelos locais** (e.g., LLaMA, Gemma) para eliminar dependência de APIs comerciais e viabilizar implantação em ambientes de governo com restrições de dados.
-6. **Interface de matchmaking** para uso por agências de fomento: dado um edital, recuperar e ranquear pesquisadores por aderência de perfil, com justificativa gerada pelo LLM rastreável aos chunks do currículo.
+6. **Interface de consulta normativa** para uso por agências de fomento e unidades credenciadas, com respostas rastreáveis aos trechos dos documentos originais.
 
 ---
 
