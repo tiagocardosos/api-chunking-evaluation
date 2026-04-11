@@ -50,8 +50,11 @@ class IngestResponse(BaseModel):
     document_id: str
     filename: str
     doc_type: DocType
+    chunking_strategy: ChunkingStrategy
+    chunk_size: Optional[int] = None
+    chunk_overlap: Optional[int] = None
     total_chunks: int
-    preview: list[ChunkPreview]  # primeiros 3 chunks
+    preview: list[ChunkPreview]
 
 
 class ChunksListResponse(BaseModel):

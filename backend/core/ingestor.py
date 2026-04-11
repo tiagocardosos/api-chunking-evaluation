@@ -168,6 +168,9 @@ def ingest_document(
         document_id=document_id,
         filename=filename,
         doc_type=doc_type,
+        chunking_strategy=chunking_strategy,
+        chunk_size=db_document.chunk_size,
+        chunk_overlap=db_document.chunk_overlap,
         total_chunks=len(chunk_data_list),
         preview=preview,
     )
