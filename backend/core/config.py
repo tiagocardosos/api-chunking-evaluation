@@ -10,6 +10,11 @@ class Settings(BaseSettings):
     embedding_model: str = "text-embedding-3-small"
     generator_model: str = "gpt-4o-mini"
     top_k: int = 5
+    cors_allowed_origins: str = "http://localhost:8080,http://localhost:3000"
+
+    @property
+    def cors_origins(self) -> list[str]:
+        return [o.strip() for o in self.cors_allowed_origins.split(",") if o.strip()]
 
 
 settings = Settings()

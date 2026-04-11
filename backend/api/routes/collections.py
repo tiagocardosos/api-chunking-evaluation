@@ -3,8 +3,8 @@ from sqlalchemy.orm import Session
 
 from core.database import get_db
 from core.vector_store import VectorStore
-from models.db import Collection
-from models.schemas import CollectionCreate, CollectionResponse
+from models.db import Collection, Document
+from models.schemas import CollectionCreate, CollectionResponse, DocumentResponse
 
 router = APIRouter()
 
@@ -51,6 +51,24 @@ def get_collection(collection_id: str, db: Session = Depends(get_db)):
     if collection is None:
         raise HTTPException(status_code=404, detail="Coleção não encontrada.")
     return collection
+
+
+@router.get("/{collection_id}/documents", response_model=list[DocumentResponse])
+def list_collection_documents(
+    collection_id: str,
+    db: Session = Depends(get_db),
+):
+    """Lista todos os documentos ingeridos em uma coleção."""
+    collection = db.get(Collection, collection_id)
+    if collection is None:
+        raise HTTPException(status_code=404, detail="Coleção não encontrada.")
+
+    return (
+        db.query(Document)
+        .filter(Document.collection_id == collection_id)
+        .order_by(Document.created_at.desc())
+        .all()
+    )
 
 
 @router.delete("/{collection_id}", status_code=204)

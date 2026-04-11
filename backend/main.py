@@ -1,8 +1,10 @@
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
-from api.routes import collections, chunking, documents, experiments, rag, search
+from api.routes import collections, chunking, dashboard, documents, experiments, rag, search
+from core.config import settings
 from core.database import init_db
 
 
@@ -19,6 +21,15 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=settings.cors_origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+app.include_router(dashboard.router, prefix="/dashboard", tags=["dashboard"])
 app.include_router(documents.router, prefix="/documents", tags=["documents"])
 app.include_router(collections.router, prefix="/collections", tags=["collections"])
 app.include_router(chunking.router, prefix="/chunking", tags=["chunking"])

@@ -39,6 +39,14 @@ class Document(Base):
     chunk_size: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
     chunk_overlap: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
     total_chunks: Mapped[int] = mapped_column(Integer, nullable=False)
+
+    word_count: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
+    unique_word_count: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
+    sentence_count: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
+    phrase_count: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
+    char_count: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
+    page_count: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
+
     created_at: Mapped[datetime] = mapped_column(default=_now)
 
     collection: Mapped["Collection"] = relationship(back_populates="documents")

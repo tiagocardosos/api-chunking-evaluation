@@ -32,6 +32,20 @@ class CollectionResponse(BaseModel):
 
 # ── Documents ─────────────────────────────────────────────────────────────────
 
+class DocumentResponse(BaseModel):
+    id: str
+    collection_id: str
+    filename: str
+    doc_type: DocType
+    chunking_strategy: ChunkingStrategy
+    chunk_size: Optional[int]
+    chunk_overlap: Optional[int]
+    total_chunks: int
+    created_at: datetime
+
+    model_config = {"from_attributes": True}
+
+
 class IngestResponse(BaseModel):
     document_id: str
     filename: str
@@ -96,6 +110,49 @@ class RagChatResponse(BaseModel):
     answer: str
     context: list[SearchResult]
     latency_ms: float
+
+
+# ── Dashboard ─────────────────────────────────────────────────────────────────
+
+class CorpusStats(BaseModel):
+    total_documents: int
+    total_chunks: int
+    total_words: int
+    total_unique_words: int
+    total_sentences: int
+    total_phrases: int
+    total_characters: int
+    total_pages: int
+    avg_chunk_size: float
+
+
+class StrategyStats(BaseModel):
+    strategy: ChunkingStrategy
+    total_chunks: int
+    document_count: int
+    avg_faithfulness: Optional[float] = None
+    avg_answer_relevancy: Optional[float] = None
+    avg_context_precision: Optional[float] = None
+    avg_context_recall: Optional[float] = None
+    avg_answer_correctness: Optional[float] = None
+
+
+class RecentExperiment(BaseModel):
+    name: str
+    strategy: ChunkingStrategy
+    status: ExperimentStatus
+    avg_answer_correctness: Optional[float] = None
+    created_at: datetime
+
+
+class DashboardResponse(BaseModel):
+    total_collections: int
+    total_documents: int
+    total_experiments: int
+    total_golden_questions: int
+    corpus_stats: CorpusStats
+    strategy_stats: list[StrategyStats]
+    recent_experiments: list[RecentExperiment]
 
 
 # ── Experiments ───────────────────────────────────────────────────────────────

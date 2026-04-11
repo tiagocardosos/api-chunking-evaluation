@@ -30,6 +30,7 @@ from core.embeddings import OpenAIEmbedder
 from core.loaders.json_lattes_loader import load_json_lattes
 from core.loaders.pdf_loader import load_pdf
 from core.loaders.xml_loader import load_xml
+from core.text_stats import compute_text_stats
 from core.vector_store import VectorStore
 from models.db import Chunk, Collection, Document
 from models.enums import ChunkingStrategy, DocType
@@ -59,7 +60,10 @@ def ingest_document(
         )
 
     # ── 2-3. Detectar tipo e carregar texto ──────────────────────────────────
-    doc_type, text = _load(file_bytes, filename, chunking_strategy)
+    doc_type, text, page_count = _load(file_bytes, filename, chunking_strategy)
+
+    # ── 2b. Estatísticas textuais para o dashboard ───────────────────────────
+    text_stats = compute_text_stats(text)
 
     # ── 4. Chunking ──────────────────────────────────────────────────────────
     chunker_kwargs = _build_chunker_kwargs(chunking_strategy, chunk_size, chunk_overlap)
@@ -121,6 +125,12 @@ def ingest_document(
             ChunkingStrategy.fixed_size, ChunkingStrategy.recursive
         ) else None,
         total_chunks=len(chunk_data_list),
+        word_count=text_stats.word_count,
+        unique_word_count=text_stats.unique_word_count,
+        sentence_count=text_stats.sentence_count,
+        phrase_count=text_stats.phrase_count,
+        char_count=text_stats.char_count,
+        page_count=page_count,
     )
     db.add(db_document)
     db.add_all([
@@ -169,9 +179,12 @@ def _load(
     file_bytes: bytes,
     filename: str,
     strategy: ChunkingStrategy,
-) -> tuple[DocType, str]:
+) -> tuple[DocType, str, int | None]:
     """
     Detecta tipo pelo nome do arquivo e extrai texto.
+
+    Retorna (doc_type, texto, page_count). page_count é preenchido
+    apenas para PDFs; XML/JSON retornam None.
 
     Para XML Lattes:
         - StructureAwareChunker recebe raw_xml (precisa das tags para parsear).
@@ -182,7 +195,7 @@ def _load(
 
     if ext == ".pdf":
         doc = load_pdf(file_bytes)
-        return DocType.pdf, doc.full_text
+        return DocType.pdf, doc.full_text, doc.total_pages
 
     if ext == ".xml":
         doc = load_xml(file_bytes)
@@ -191,7 +204,7 @@ def _load(
             if strategy == ChunkingStrategy.structure_aware
             else doc.plain_text
         )
-        return DocType.xml_lattes, text
+        return DocType.xml_lattes, text, None
 
     if ext == ".json":
         doc = load_json_lattes(file_bytes)
@@ -200,7 +213,7 @@ def _load(
             if strategy == ChunkingStrategy.structure_aware
             else doc.plain_text
         )
-        return DocType.json_lattes, text
+        return DocType.json_lattes, text, None
 
     raise ValueError(
         f"Tipo de arquivo não suportado: {ext!r}. "
