@@ -1,6 +1,10 @@
 # RAG Chunking Evaluation
 
-Experimento acadêmico de mestrado que compara **5 estratégias de chunking** em sistemas RAG aplicados a documentos institucionais brasileiros: editais PDF da EMBRAPII e currículos Lattes (JSON/XML) do CNPq.
+Backend de experimentação para avaliação comparativa de **5 estratégias de chunking** em sistemas RAG (Retrieval-Augmented Generation) aplicados a documentos institucionais brasileiros.
+
+Desenvolvido como parte de dissertação do **Mestrado em Administração Pública: Ciência de Dados e Inteligência Artificial no Setor Público**.
+
+O corpus de teste inclui documentos normativos da EMBRAPII (PDF) e currículos Lattes (JSON/XML) da Plataforma Lattes/CNPq. A qualidade de cada estratégia é medida pelas métricas do framework RAGAS e por testes estatísticos pareados (Wilcoxon + Holm-Bonferroni).
 
 > **Pergunta de pesquisa:** Como diferentes estratégias de chunking afetam a qualidade de recuperação e geração em documentos institucionais brasileiros?
 
@@ -201,7 +205,9 @@ Consulte `docs/PAPER-NOTES.md` para justificativas das escolhas técnicas releva
 
 ## Autores
 
-Tiago Cardoso · Alan Robson — Mestrado em Ciência da Computação
+**Tiago Cardoso Soares** · **Alan Tulio Lino Gonçalves**
+
+Mestrado em Administração Pública: Ciência de Dados e Inteligência Artificial no Setor Público
 
 
 docker exec chunking-evaluation-fastapi-1 uv run python evaluation/run_analysis.py --doc-type pdf
