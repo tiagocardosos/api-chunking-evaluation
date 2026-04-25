@@ -1,4 +1,14 @@
-# RAG Chunking Evaluation
+# RAG Chunking Evaluation — Backend
+
+[![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-latest-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Qdrant](https://img.shields.io/badge/Qdrant-vector_store-FF4154)](https://qdrant.tech/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-gpt--4o--mini-412991?logo=openai&logoColor=white)](https://platform.openai.com/)
+[![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker&logoColor=white)](https://docs.docker.com/compose/)
+[![uv](https://img.shields.io/badge/uv-package_manager-DE5FE9)](https://docs.astral.sh/uv/)
+[![RAGAS](https://img.shields.io/badge/RAGAS-evaluation-F97316)](https://docs.ragas.io/)
+[![Status](https://img.shields.io/badge/Status-Em_desenvolvimento-green)]()
 
 Backend de experimentação para avaliação comparativa de **5 estratégias de chunking** em sistemas RAG (Retrieval-Augmented Generation) aplicados a documentos institucionais brasileiros.
 
@@ -7,6 +17,30 @@ Desenvolvido como parte de dissertação do **Mestrado em Administração Públi
 O corpus de teste inclui documentos normativos da EMBRAPII (PDF) e currículos Lattes (JSON/XML) da Plataforma Lattes/CNPq. A qualidade de cada estratégia é medida pelas métricas do framework RAGAS e por testes estatísticos pareados (Wilcoxon + Holm-Bonferroni).
 
 > **Pergunta de pesquisa:** Como diferentes estratégias de chunking afetam a qualidade de recuperação e geração em documentos institucionais brasileiros?
+
+---
+
+## Frontend — RAG Orbit
+
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev/)
+[![TanStack Start](https://img.shields.io/badge/TanStack_Start-v1-FF4154?logo=reactquery&logoColor=white)](https://tanstack.com/start)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Bun](https://img.shields.io/badge/Bun-runtime-F9F1E1?logo=bun&logoColor=black)](https://bun.sh/)
+
+O **[RAG Orbit](https://github.com/tiagocardosos/rag-orbit)** é a interface web do projeto — uma plataforma interativa para configurar experimentos, visualizar resultados e explorar o corpus de forma intuitiva. Consome exclusivamente esta API.
+
+**Funcionalidades principais:**
+
+- **Dashboard (Solar System)** — visualização orbital das estratégias com métricas agregadas
+- **Chunking Lab** — comparação visual de distribuição de tamanho dos chunks
+- **Busca Semântica** — interface para testar buscas vetoriais no corpus
+- **RAG Chat** — chat com o sistema RAG para testar respostas em tempo real
+- **Experimentos** — configuração e disparo de avaliações RAGAS
+- **Resultados** — heatmaps, box-plots, radar charts e testes estatísticos (Wilcoxon)
+- **Golden Set** — gerenciamento das 231 perguntas de avaliação (factuais e inferenciais)
+
+> O frontend não funciona sem este backend em execução em `http://localhost:8000`.
 
 ---
 
@@ -54,8 +88,8 @@ O corpus de teste inclui documentos normativos da EMBRAPII (PDF) e currículos L
 
 ```bash
 # 1. Clonar e configurar variáveis de ambiente
-git clone <repo-url>
-cd rag-chunking-evaluation-mestrado
+git clone https://github.com/tiagocardosos/api-chunking-evaluation
+cd api-chunking-evaluation
 cp .env.example .env
 # edite .env e insira sua OPENAI_API_KEY
 
@@ -91,6 +125,7 @@ backend/
   models/             # ORM SQLAlchemy + schemas Pydantic
 data/
   lattes/             # 23 currículos Lattes em JSON (exemplos)
+  golden_questions/   # PDFs e golden sets de avaliação
 evaluation/
   wilcoxon.py         # testes estatísticos
   tables.py           # exportação CSV / LaTeX
@@ -176,7 +211,7 @@ docker exec rag-chunking-evaluation-mestrado-fastapi-1 uv add <pacote>
 
 ## Análise estatística
 
-Após coletar resultados de múltiplos experimentos (requer rebuild após a primeira vez):
+Após coletar resultados de múltiplos experimentos:
 
 ```bash
 # Wilcoxon + Holm-Bonferroni + critérios de sucesso
@@ -208,8 +243,3 @@ Consulte `docs/PAPER-NOTES.md` para justificativas das escolhas técnicas releva
 **Tiago Cardoso Soares** · **Alan Tulio Lino Gonçalves**
 
 Mestrado em Administração Pública: Ciência de Dados e Inteligência Artificial no Setor Público
-
-
-docker exec chunking-evaluation-fastapi-1 uv run python evaluation/run_analysis.py --doc-type pdf
-
-docker exec chunking-evaluation-fastapi-1 uv run python evaluation/tables.py
