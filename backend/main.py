@@ -3,7 +3,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from api.routes import collections, chunking, dashboard, documents, experiments, rag, search
+from api.routes import analytics, collections, chunking, dashboard, documents, experiments, rag, search
 from core.config import settings
 from core.database import init_db
 
@@ -36,6 +36,7 @@ app.include_router(chunking.router, prefix="/chunking", tags=["chunking"])
 app.include_router(search.router, prefix="/search", tags=["search"])
 app.include_router(rag.router, prefix="/rag", tags=["rag"])
 app.include_router(experiments.router, prefix="/experiments", tags=["experiments"])
+app.include_router(analytics.router, prefix="/analytics", tags=["analytics"])
 
 
 @app.get("/health")

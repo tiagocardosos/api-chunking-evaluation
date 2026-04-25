@@ -201,3 +201,91 @@ class ExperimentRunResponse(BaseModel):
     avg_context_recall: Optional[float] = None
     avg_answer_correctness: Optional[float] = None
     results: list[ExperimentResultSummary]
+
+
+# ── Analytics ─────────────────────────────────────────────────────────────────
+
+class MetricStats(BaseModel):
+    mean: Optional[float]
+    median: Optional[float]
+    std: Optional[float]
+
+
+class StrategyMetrics(BaseModel):
+    strategy: str
+    experiment_count: int
+    result_count: int
+    faithfulness: MetricStats
+    answer_relevancy: MetricStats
+    context_precision: MetricStats
+    context_recall: MetricStats
+    answer_correctness: MetricStats
+    mrr: MetricStats
+
+
+class StrategiesResponse(BaseModel):
+    strategies: list[StrategyMetrics]
+
+
+class BoxPlotStats(BaseModel):
+    min: float
+    q1: float
+    median: float
+    q3: float
+    max: float
+    outliers: list[float]
+    n: int
+
+
+class DistributionsResponse(BaseModel):
+    metrics: dict[str, dict[str, BoxPlotStats]]
+
+
+class StatTestResult(BaseModel):
+    strategy_a: str
+    strategy_b: str
+    metric: str
+    n_pairs: int
+    median_a: float
+    median_b: float
+    statistic: float
+    p_value: float
+    p_corrected: float
+    effect_size_r: float
+    significant: bool
+    winner: Optional[str]
+
+
+class StatTestsResponse(BaseModel):
+    comparisons: list[StatTestResult]
+
+
+class StrategyRanking(BaseModel):
+    strategy: str
+    wins: int
+    metrics_won: list[str]
+    score: float
+
+
+class RankingsResponse(BaseModel):
+    rankings: list[StrategyRanking]
+    metric_leaders: dict[str, str]
+
+
+class TemporalExperiment(BaseModel):
+    id: str
+    name: str
+    strategy: str
+    created_at: datetime
+    completed_at: Optional[datetime]
+    result_count: int
+    avg_faithfulness: Optional[float]
+    avg_answer_relevancy: Optional[float]
+    avg_context_precision: Optional[float]
+    avg_context_recall: Optional[float]
+    avg_answer_correctness: Optional[float]
+    avg_mrr: Optional[float]
+
+
+class TemporalResponse(BaseModel):
+    experiments: list[TemporalExperiment]
